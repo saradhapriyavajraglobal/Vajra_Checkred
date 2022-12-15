@@ -10,6 +10,8 @@
 
 <h1>Title</h1>
 
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores recusandae dolor nostrum minima vitae consectetur ut vero, ab eveniet consequatur porro quas, dolorum nemo soluta non enim voluptatem nihil in.</p>
+
 <?php endwhile;
 
 get_footer();   ?>
