@@ -1,18 +1,1 @@
-{
-    "version": 3,
-    "mappings": "ACGA,uCAAuC;AASvC,yCAAyC;AASzC,mDAAmD;AKrBnD,AAAA,MAAM,CAAC;EACN,QAAQ,EAAE,cAAc;EACxB,QAAQ,EAAE,MAAM;EAChB,KAAK,EAAE,IAAI;EACX,GAAG,EAAE,CAAC;EACN,IAAI,EAAE,CAAC;EACP,OAAO,EAAE,IAAI;CACb",
-    "sources": [
-        "style.scss",
-        "scss/_variables.scss",
-        "scss/_breakpoint.scss",
-        "scss/_extend.scss",
-        "scss/_footer.scss",
-        "scss/_global.scss",
-        "scss/_header.scss",
-        "scss/_wrapers.scss",
-        "scss/_form.scss",
-        "scss/_page.scss"
-    ],
-    "names": [],
-    "file": "style.css"
-}
+{"version":3,"sources":["scss/_variables.scss","scss/_header.scss","style.css"],"names":[],"mappings":"AAAA,sCAAA;AASA,wCAAA;AASA,kDAAA;AClBA;EACC,wBAAA;EACA,gBAAA;EACA,WAAA;EACA,MAAA;EACA,OAAA;EACA,aAAA;ACID","file":"style.css"}
