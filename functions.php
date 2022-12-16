@@ -8,12 +8,11 @@ function add_scripts() {
     wp_enqueue_style( 'mainStyle2', get_stylesheet_directory_uri() . '/assets/css/style.css', array(), '', false );  
     wp_enqueue_script( 'jquery', get_stylesheet_directory_uri() . '/assets/js/jquery.min.js', array( 'jquery' ), '', true );
 	wp_enqueue_script( 'simplePagination', get_stylesheet_directory_uri() . '/assets/js/simplePagination.js', array( 'jquery' ), '1.6', true );
-    wp_enqueue_script( 'Boostrap', get_stylesheet_directory_uri() . '/assets/js/bootstrap.min.js', array( 'jquery' ), '', true );
+    wp_enqueue_script( 'Bootstrap', get_stylesheet_directory_uri() . '/assets/js/bootstrap.min.js', array( 'jquery' ), '', true );
     wp_enqueue_script( 'slick', get_stylesheet_directory_uri() . '/assets/js/slick.min.js', array( 'jquery' ), '', true );
 	wp_enqueue_script( 'slick-nav', get_stylesheet_directory_uri() . '/assets/js/slicknav.min.js', array( 'jquery' ), '', true );
     wp_enqueue_script( 'main', get_template_directory_uri() . '/assets/js/main.js', array(), '1.0.0', true );
-	wp_enqueue_script( 'expandgrid', get_template_directory_uri() . '/assets/js/expandgrid.js', array(), '1.0.0', true );
-       
+  
 }
 
 add_action( 'wp_enqueue_scripts', 'add_scripts' );
@@ -34,9 +33,7 @@ add_action( 'after_setup_theme', 'vajraFile_includes' );
 
 /************************************ */
 add_theme_support( 'post-thumbnails' );
-add_theme_support( 'woocommerce' );
-	add_theme_support( 'wc-product-gallery-zoom' );
-	add_theme_support( 'wc-product-gallery-slider' );
+
 	add_theme_support( 'automatic-feed-links' );
 	add_theme_support( 'title-tag' );
 	add_theme_support( 'post-formats', array( 'audio', 'gallery', 'video', 'quote', 'link' ) );
@@ -81,27 +78,7 @@ if( function_exists('acf_add_options_page') ) {
             ));
 
           }
-if( function_exists('acf_add_options_page') ) {
-			  
-			   acf_add_options_page(array(                  
-              'page_title' 	=> 'Doctor Slider',
-              'menu_title'	=> 'Doctor Slider',
-              'menu_slug' 	=> 'doctor slider',
-              // 'icon_url' => '',         
-              'redirect' => true
-              
-            ));
 
-          }
-
-  register_sidebar([
-            'name'          => __('BlogDetail', 'sage'),
-            'id'            => 'sidebar-BlogDetail',
-            'before_widget' => '<section class="widget %1$s %2$s">',
-            'after_widget'  => '</section>',
-            'before_title'  => '<h3 class="widget-title">',
-            'after_title'   => '</h3>'
-            ]);
 
 /***Excerpt ****/
 function excerpt($limit) {
