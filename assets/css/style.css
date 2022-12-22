@@ -1,6 +1,11 @@
 /* ---------- Font weight ---------- */
 /* ---------- Border Radius ---------- */
 /* ---------- Screen size definitions ---------- */
+@font-face {
+  font-family: "Manrope", sans-serif;
+  src: url("/wp-content/themes/Vajra_Checkred/assets/fonts/Manrope-Regular.ttf");
+  font-weight: normal;
+}
 header {
   position: -webkit-sticky;
   position: sticky;
@@ -9,8 +14,48 @@ header {
   left: 0;
   z-index: 9999;
 }
+header .header-main {
+  background: #000000;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+header .header-main .head-wrap {
+  display: flex;
+}
+header .header-main .head-wrap .head-logo {
+  background-image: url(/wp-content/uploads/2022/12/Logo.svg);
+  background-position: 0;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: block;
+  float: left;
+  height: 100px;
+  width: 240px;
+}
+header .header-main .head-wrap .nav-primary {
+  width: 100%;
+  align-self: center;
+}
+header .header-main .head-wrap .nav-primary #menu-primary-navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+header .header-main .head-wrap .nav-primary #menu-primary-navigation > li {
+  margin: 0 30px;
+  display: inline-block;
+  line-height: 60px;
+}
+header .header-main .head-wrap .nav-primary #menu-primary-navigation > li a {
+  font-size: 15px;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: "Manrope", sans-serif;
+  letter-spacing: 0.84px;
+}
 
 h1 {
   color: white;
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: 300;
 }/*# sourceMappingURL=style.css.map */
