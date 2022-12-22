@@ -59,6 +59,35 @@
     </div>
     
 </section>
+
+
+<section>
+   <div class="container-fluid">
+      <div class="row">
+         <div class="col-lg-4">
+            <div>
+              <h3>Inspect</h3>
+              <p>Inspect your cloud and SaaS asset inventory based on customized rules with the help of agentless scanners</p>
+            </div>
+            <div>
+              <h3>Report</h3>
+              <p>View all pertinent security information on a single dashboard and use the ticketing system to respond to alerts</p>
+            </div>
+         </div>
+         <div class="col-lg-4"></div>
+         <div class="col-lg-4">
+         <div>
+              <h3>Inspect</h3>
+              <p>Inspect your cloud and SaaS asset inventory based on customized rules with the help of agentless scanners</p>
+            </div>
+            <div>
+              <h3>Report</h3>
+              <p>View all pertinent security information on a single dashboard and use the ticketing system to respond to alerts</p>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
 <?php endwhile;
 
 get_footer();   ?>
