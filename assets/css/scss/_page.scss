@@ -3,3 +3,29 @@ h1{
     font-size: 18px;
     font-weight: $font-weight-light;
 }
+.integration-sec{
+  .integration{
+    padding-top: 20px;
+    text-align:center;
+  overflow-x: hidden;
+
+    .inte-carousel{
+        width:100%;
+        margin:0px auto;
+        animation: scroll $animationSpeed linear infinite;
+      }
+      .slick-slide{
+        margin:10px;
+      }
+      .slide-inte {
+        img{
+            height: 200px;
+        }
+      }
+
+  }
+ 
+
+  
+} 
+  

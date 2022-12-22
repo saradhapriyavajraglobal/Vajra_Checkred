@@ -1,6 +1,9 @@
+/* ---------- Font family ---------- */
 /* ---------- Font weight ---------- */
+/* ---------- Font size ---------- */
 /* ---------- Border Radius ---------- */
 /* ---------- Screen size definitions ---------- */
+/* ---------- Animation speed ---------- */
 @font-face {
   font-family: "Manrope", sans-serif;
   src: url("/wp-content/themes/Vajra_Checkred/assets/fonts/Manrope-Regular.ttf");
@@ -58,4 +61,22 @@ h1 {
   color: white;
   font-size: 18px;
   font-weight: 300;
+}
+
+.integration-sec .integration {
+  padding-top: 20px;
+  text-align: center;
+  overflow-x: hidden;
+}
+.integration-sec .integration .inte-carousel {
+  width: 100%;
+  margin: 0px auto;
+  -webkit-animation: scroll 40s linear infinite;
+          animation: scroll 40s linear infinite;
+}
+.integration-sec .integration .slick-slide {
+  margin: 10px;
+}
+.integration-sec .integration .slide-inte img {
+  height: 200px;
 }/*# sourceMappingURL=style.css.map */
