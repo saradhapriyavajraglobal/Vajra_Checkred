@@ -1,3 +1,13 @@
+/* ---------- Font family ---------- */
+$primary-font:        'Manrope';
+
+
+$pcw:           #FFFFFF;
+$pcg:           #ABAFB4;
+$pcr:           #AD3434;
+
+
+
 /* ---------- Font weight ---------- */
 
 $font-weight-light:                300;
@@ -6,6 +16,24 @@ $font-weight-medium:               500;
 $font-weight-semibold:             600;
 $font-weight-bold:                 700;
 $font-weight-extrabold:            800;
+
+
+/* ---------- Font size ---------- */
+$v-title-fs1:         48px;
+$v-title-fs2:         40px;
+$v-title-fs3:         32px;
+$v-title-fs4:         30px;
+
+$v-para-fs1:          16px;
+$v-para-fs2:          14px;
+
+$v-sub-title-fs1:     24px;
+$v-sub-title-fs2:     20px;
+$v-sub-title-fs3:     18px;
+
+
+
+
 
 /* ---------- Border Radius ---------- */
 
@@ -28,3 +56,7 @@ $breakpoints: (
     xxl:        1400px,
 
 );
+
+/* ---------- Animation speed ---------- */
+
+$animationSpeed: 40s;
