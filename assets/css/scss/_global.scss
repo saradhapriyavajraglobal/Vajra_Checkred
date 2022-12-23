@@ -17,51 +17,49 @@
     display: inline-flex;
     justify-content: space-between;
     
-    &:hover .text-wrap:after{
+    &:hover{
 
-        height: 70%;
-        top: 50%;
-        transform: translateY(-50%);
+        .text-wrap:after{
 
-    }
+            height: 70%;
+            top: 50%;
+            transform: translateY(-50%);
+    
+        }
+        .btn-link{
 
-    &:hover .btn-link{
+            opacity: 0; 
+            transform: translate(-100%,0);
+    
+        }
+        .icon-img:before{
 
-        opacity: 0; 
-        transform: translate(-100%,0);
+            transform: translate(100%,-50%);
+            opacity: 1;
+            top: 50%;
+            right:35px;
+    
+        }
+        .text-wrap:before{
 
-    }
+            opacity: 1; 
+            transform: translate(0,-50%);
+            top: 50%;
+    
+        }
+        .i-img{
 
-    &:hover .icon-img:before{
+            opacity: 0;
+    
+    
+        }
+        .icon-img, .text-wrap{
+            background-color: rgb(135, 31, 31);
+        }
+    
 
-        transform: translate(100%,-50%);
-        opacity: 1;
-        top: 50%;
-        right:35px;
+    } 
 
-    }
-
-    &:hover .text-wrap:before{
-
-        opacity: 1; 
-        transform: translate(0,-50%);
-        top: 50%;
-
-    }
-
-    &:hover .i-img{
-
-        opacity: 0;
-
-
-    }
-
-    &:hover .icon-img{
-        background-color: rgb(135, 31, 31);
-    }
-    &:hover .text-wrap{
-        background-color: rgb(135, 31, 31);
-    }
     .text-wrap {
 
         background: black;

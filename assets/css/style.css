@@ -45,10 +45,7 @@ a {
 .cta:hover .i-img {
   opacity: 0;
 }
-.cta:hover .icon-img {
-  background-color: rgb(135, 31, 31);
-}
-.cta:hover .text-wrap {
+.cta:hover .icon-img, .cta:hover .text-wrap {
   background-color: rgb(135, 31, 31);
 }
 .cta .text-wrap {
