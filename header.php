@@ -17,7 +17,6 @@
 
 						<div class="col-lg-11 col-md-12 mx-auto">
 
-
 							<div class="head-wrap clearfix">
 
 								<a class="head-logo" href="<?= esc_url(home_url('/')); ?>"></a>
