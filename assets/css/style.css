@@ -32,29 +32,49 @@ a {
   top: 50%;
   transform: translateY(-50%);
   background-color: #FFFFFF;
-}
-.cta:hover .btn-link {
-  opacity: 0;
-  transform: translate(-100%, 0);
-}
-.cta:hover .icon-img:before {
   transform: translate(100%, -45%);
   opacity: 1;
   top: 50%;
   right: 35px;
 }
-.cta:hover .text-wrap:before {
+.cta:hover .text-wrap:after .text-wrap:after {
+  height: 70%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.cta:hover .text-wrap:after .btn-link {
+  opacity: 0;
+  transform: translate(-100%, 0);
+}
+.cta:hover .text-wrap:after .icon-img:before {
+  transform: translate(100%, -50%);
+  opacity: 1;
+  top: 50%;
+  right: 35px;
+}
+.cta:hover .text-wrap:after .text-wrap:before {
   opacity: 1;
   transform: translate(0, -50%);
   top: 50%;
 }
-.cta:hover .i-img {
+.cta:hover .text-wrap:after .i-img {
   opacity: 0;
 }
-.cta:hover .icon-img {
+.cta:hover .text-wrap:after .icon-img, .cta:hover .text-wrap:after .text-wrap {
+  background-color: rgb(135, 31, 31);
+}
+.cta:hover:hover .text-wrap:before {
+  opacity: 1;
+  transform: translate(0, -50%);
+  top: 50%;
+}
+.cta:hover:hover .i-img {
+  opacity: 0;
+}
+.cta:hover:hover .icon-img {
   background-color: #AD3434;
 }
-.cta:hover .text-wrap {
+.cta:hover:hover .text-wrap {
   background-color: #AD3434;
 }
 .cta .text-wrap {

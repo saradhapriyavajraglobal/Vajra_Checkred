@@ -21,24 +21,52 @@
     
     &:hover{
         border: 1px solid $pcr;
-    }
-    &:hover .text-wrap:after{
+   
+        .text-wrap:after{
 
         height: 70%;
         top: 50%;
         transform: translateY(-50%);
         background-color: #FFFFFF;
 
-    }
+        .text-wrap:after{
 
-    &:hover .btn-link{
+            height: 70%;
+            top: 50%;
+            transform: translateY(-50%);
+    
+        }
+        .btn-link{
 
-        opacity: 0; 
-        transform: translate(-100%,0);
+            opacity: 0; 
+            transform: translate(-100%,0);
+    
+        }
+        .icon-img:before{
 
-    }
+            transform: translate(100%,-50%);
+            opacity: 1;
+            top: 50%;
+            right:35px;
+    
+        }
+        .text-wrap:before{
 
-    &:hover .icon-img:before{
+            opacity: 1; 
+            transform: translate(0,-50%);
+            top: 50%;
+    
+        }
+        .i-img{
+
+            opacity: 0;
+    
+    
+        }
+        .icon-img, .text-wrap{
+            background-color: rgb(135, 31, 31);
+        }
+    
 
         transform: translate(100%,-45%);
         opacity: 1;
@@ -68,6 +96,8 @@
     &:hover .text-wrap{
         background-color: $pcr;
     }
+    } 
+
     .text-wrap {
 
         background: black;
