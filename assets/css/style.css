@@ -4,98 +4,151 @@
 /* ---------- Border Radius ---------- */
 /* ---------- Screen size definitions ---------- */
 /* ---------- Animation speed ---------- */
+footer {
+  background: #000000;
+  padding: 80px 0;
+}
+footer .footer-top .block-7.widget_block {
+  margin-bottom: 25px;
+}
+footer .footer-top .block-7.widget_block img {
+  width: 65%;
+  height: auto;
+}
+footer .footer-top .block-8.widget_block.widget_text p {
+  color: #ABAFB4;
+  padding-right: 40px;
+}
+footer .footer-top h4 {
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+footer .footer-top ul li {
+  font-size: 16px;
+  line-height: 40px;
+}
+footer .footer-top ul li a {
+  color: #8C929A;
+}
+footer .footer-top .block-11.widget_block ul li {
+  background-image: url(/wp-content/uploads/2022/12/Linkedin-2.svg);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: left center;
+  padding-left: 40px;
+}
+footer .footer-top .block-11.widget_block ul:hover li {
+  background-image: url(/wp-content/uploads/2022/12/Linkedin-Red.svg);
+}
+footer .footer-top .block-11.widget_block ul:hover a {
+  text-decoration: underline;
+  color: #FFFFFF;
+}
+
 @font-face {
   font-family: "Manrope", sans-serif;
   src: url("/wp-content/themes/Vajra_Checkred/assets/fonts/Manrope-Regular.ttf");
   font-weight: normal;
 }
-a {
-  text-decoration: none !important;
+body {
+  background-color: #000000;
 }
 
-.cta {
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cta_b {
   outline: none;
-  border: 1px solid #8C929A;
   overflow: hidden;
   position: relative;
-  border-radius: 10px;
   display: inline-flex;
   justify-content: space-between;
   align-items: center;
   align-self: center;
 }
-.cta:hover {
-  border: 1px solid #AD3434;
+.cta_b:hover .text-wrap {
+  border-color: #AD3434;
+  border-style: solid;
+  border-width: 1px 0 1px 1px;
+  border-radius: 10px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
-.cta:hover .text-wrap:after {
+.cta_b:hover .text-wrap:after {
   height: 70%;
   top: 50%;
   transform: translateY(-50%);
   background-color: #FFFFFF;
+}
+.cta_b:hover .btn-link {
+  opacity: 0;
+  transform: translate(-100%, 0);
+}
+.cta_b:hover .icon-img {
+  border-color: #AD3434;
+  border-style: solid;
+  border-width: 1px 1px 1px 0;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.cta_b:hover .icon-img:before {
   transform: translate(100%, -45%);
   opacity: 1;
   top: 50%;
   right: 35px;
 }
-.cta:hover .text-wrap:after .text-wrap:after {
-  height: 70%;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.cta:hover .text-wrap:after .btn-link {
-  opacity: 0;
-  transform: translate(-100%, 0);
-}
-.cta:hover .text-wrap:after .icon-img:before {
-  transform: translate(100%, -50%);
-  opacity: 1;
-  top: 50%;
-  right: 35px;
-}
-.cta:hover .text-wrap:after .text-wrap:before {
+.cta_b:hover .text-wrap:before {
   opacity: 1;
   transform: translate(0, -50%);
   top: 50%;
 }
-.cta:hover .text-wrap:after .i-img {
-  opacity: 0;
+.cta_b:hover .i-img {
+  transform: translate(35px, 5%);
+  transition: all 0.8s ease-in-out;
 }
-.cta:hover .text-wrap:after .icon-img, .cta:hover .text-wrap:after .text-wrap {
-  background-color: rgb(135, 31, 31);
-}
-.cta:hover:hover .text-wrap:before {
-  opacity: 1;
-  transform: translate(0, -50%);
-  top: 50%;
-}
-.cta:hover:hover .i-img {
-  opacity: 0;
-}
-.cta:hover:hover .icon-img {
+.cta_b:hover .icon-img, .cta_b:hover .text-wrap {
   background-color: #AD3434;
 }
-.cta:hover:hover .text-wrap {
-  background-color: #AD3434;
-}
-.cta .text-wrap {
-  background: black;
+.cta_b .text-wrap {
+  background: #000000;
   padding: 15px;
   z-index: 1;
   position: relative;
+  border-color: #8C929A;
+  border-style: solid;
+  border-width: 1px 0 1px 1px;
+  border-radius: 10px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
-.cta .text-wrap:before {
+.cta_b .text-wrap:before {
   content: attr(data-hover);
   position: absolute;
   top: 50%;
   left: 15px;
-  color: #fff;
+  color: #FFFFFF;
   width: 100%;
-  font-size: 16px;
   opacity: 0;
   transform: translate(100%, -50%);
   transition: all 0.7s ease-in-out;
 }
-.cta .text-wrap::after {
+.cta_b .text-wrap::after {
   position: absolute;
   content: "";
   right: 0;
@@ -105,21 +158,30 @@ a {
   background-color: #8C929A;
   transition: 0.7s;
 }
-.cta .text-wrap .btn-link {
+.cta_b .text-wrap .btn-link {
+  transition: all 0.7s ease-in-out;
   text-decoration: none !important;
 }
-.cta .text-wrap .btn-link .link {
-  color: #fff !important;
-  font-weight: 300;
+.cta_b .text-wrap .btn-link .link {
+  color: #FFFFFF !important;
+  font-weight: normal;
   position: relative;
   text-decoration: none;
+  font-size: 15px;
+  font-family: "Manrope", sans-serif;
 }
-.cta .icon-img {
-  background: black;
+.cta_b .icon-img {
+  background: #000000;
   padding: 15px;
   z-index: 9;
+  border-color: #ABAFB4;
+  border-style: solid;
+  border-width: 1px 1px 1px 0;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
-.cta .icon-img:before {
+.cta_b .icon-img:before {
   content: "";
   background: url("/wp-content/uploads/2022/12/right-2.png");
   opacity: 0;
@@ -132,7 +194,7 @@ a {
   position: absolute;
   transition: 0.7s;
 }
-.cta .i-img {
+.cta_b .i-img {
   height: 20px;
   width: 20px;
   -o-object-fit: contain;
@@ -166,7 +228,6 @@ header .header-main .head-wrap .head-logo {
 }
 header .header-main .head-wrap .nav-primary {
   text-align: center;
-  flex: 1;
   align-self: center;
 }
 header .header-main .head-wrap .nav-primary #menu-primary-navigation {
@@ -186,6 +247,18 @@ header .header-main .head-wrap .nav-primary #menu-primary-navigation > li a {
   color: #FFFFFF;
   font-family: "Manrope", sans-serif;
   letter-spacing: 0.84px;
+}
+header .header-main .head-wrap .search a {
+  width: 30px;
+  height: 30px;
+  background-image: url(/wp-content/uploads/2022/12/Icon-search.svg);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  display: block;
+}
+header .bg-header {
+  background: rgba(0, 0, 0, 0.8784313725);
 }
 
 h1 {

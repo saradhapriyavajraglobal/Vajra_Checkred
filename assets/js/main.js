@@ -20,3 +20,13 @@ jQuery(document).ready(function(){
       rtl: true,
     });
   });
+
+  jQuery(document).ready(function () {
+    jQuery(window).scroll(function () {
+        if (jQuery(this).scrollTop() > 50) {
+            jQuery('.header-main').addClass('bg-header');
+        } else {
+            jQuery('.header-main').removeClass('bg-header');
+        }
+    });
+      });

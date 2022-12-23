@@ -1,0 +1,69 @@
+footer{
+    background: $pcb;
+    padding: 80px 0;
+
+    .footer-top{
+
+        .block-7.widget_block{
+
+            margin-bottom: 25px;
+
+            img{
+                width: 65%;
+                height: auto;
+            }
+        }
+
+        .block-8.widget_block.widget_text{
+            p{
+                color: $pcg;
+                padding-right: 40px;
+            }
+        }
+
+        h4{
+            color: $pcw;
+            font-size: $v-sub-title-fs3;
+            font-weight: $font-weight-regular;
+            margin-bottom: 25px;
+        }
+
+        ul{
+
+            li{
+                font-size: 16px;
+                line-height: 40px;
+                
+                a{
+                    color: $scg;
+                }
+            }
+        }
+
+        .block-11.widget_block{
+            ul{
+                li{
+                    background-image: url(/wp-content/uploads/2022/12/Linkedin-2.svg);
+                    background-repeat: no-repeat;
+                    background-size: 30px;
+                    background-position: left center;
+                    padding-left: 40px;
+                }
+
+                &:hover{
+
+                    li{
+
+                        background-image: url(/wp-content/uploads/2022/12/Linkedin-Red.svg);
+
+                    }
+
+                    a{
+                        text-decoration: underline;
+                        color: $pcw;
+                    }
+                }
+            }
+        }
+    }
+}

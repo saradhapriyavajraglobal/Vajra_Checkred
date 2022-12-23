@@ -6,6 +6,8 @@ header {
 	left: 0;
 	z-index: 9999;
 
+
+
 	.header-main{
 
         background: $pcb;
@@ -29,7 +31,6 @@ header {
 			.nav-primary{
 
 				text-align: center;
-				flex: 1;
 				align-self: center;
 
 				#menu-primary-navigation{
@@ -62,7 +63,24 @@ header {
 	
 			}
 
+			.search{
+				a{
+					width: 30px;
+					height: 30px;
+					background-image: url(/wp-content/uploads/2022/12/Icon-search.svg);
+					background-repeat: no-repeat;
+					background-size: 30px;
+					background-position: center;
+					display: block;
+				}
+			}
+
         }
 
     }
+
+	.bg-header{
+		background: #000000e0;
+	}
+
 }
