@@ -21,7 +21,7 @@
 
 								<a class="head-logo" href="<?= esc_url(home_url('/')); ?>"></a>
 
-								<nav class="nav-primary">
+								<nav class="nav-primary mx-auto">
 
 									<?php if (has_nav_menu('primary_navigation')) :
 
@@ -32,10 +32,23 @@
 
 								</nav>
 
-								<div class="head-cta">
+								<div class="cta_b">
+									<div data-hover="Request a demo" class="text-wrap">
+										<div class="btn-link">
+											<a class="link" href="#">Request a Demo</a>
+										</div> 
+									</div> 
+									<div class="icon-img">
+										<span>
+											<img src="/wp-content/uploads/2022/12/right-3.png" class="i-img">
+										</span>
+									</div>
+								</div>
 
-									<a class="cta" href="#"></a>
-
+								<div class="search ms-4 order-xl-2 order-lg-1 order-md-1 order-1 align-self-center">
+									
+									<a data-bs-toggle="modal" data-bs-target="#testi_modal" class="search-cta" href=""></a>
+								
 								</div>
 
 							</div>

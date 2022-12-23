@@ -4,10 +4,201 @@
 /* ---------- Border Radius ---------- */
 /* ---------- Screen size definitions ---------- */
 /* ---------- Animation speed ---------- */
+footer {
+  background: #000000;
+  padding: 80px 0;
+}
+footer .footer-top .block-7.widget_block {
+  margin-bottom: 25px;
+}
+footer .footer-top .block-7.widget_block img {
+  width: 65%;
+  height: auto;
+}
+footer .footer-top .block-8.widget_block.widget_text p {
+  color: #ABAFB4;
+  padding-right: 40px;
+}
+footer .footer-top h4 {
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+footer .footer-top ul li {
+  font-size: 16px;
+  line-height: 40px;
+}
+footer .footer-top ul li a {
+  color: #8C929A;
+}
+footer .footer-top .block-11.widget_block ul li {
+  background-image: url(/wp-content/uploads/2022/12/Linkedin-2.svg);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: left center;
+  padding-left: 40px;
+}
+footer .footer-top .block-11.widget_block ul:hover li {
+  background-image: url(/wp-content/uploads/2022/12/Linkedin-Red.svg);
+}
+footer .footer-top .block-11.widget_block ul:hover a {
+  text-decoration: underline;
+  color: #FFFFFF;
+}
+
 @font-face {
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   src: url("/wp-content/themes/Vajra_Checkred/assets/fonts/Manrope-Regular.ttf");
   font-weight: normal;
+}
+body {
+  background-color: #000000;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cta_b {
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: center;
+}
+.cta_b:hover .text-wrap {
+  border-color: #AD3434;
+  border-style: solid;
+  border-width: 1px 0 1px 1px;
+  border-radius: 10px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.cta_b:hover .text-wrap:after {
+  height: 70%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #FFFFFF;
+}
+.cta_b:hover .btn-link {
+  opacity: 0;
+  transform: translate(-100%, 0);
+}
+.cta_b:hover .icon-img {
+  border-color: #AD3434;
+  border-style: solid;
+  border-width: 1px 1px 1px 0;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.cta_b:hover .icon-img:before {
+  transform: translate(100%, -45%);
+  opacity: 1;
+  top: 50%;
+  right: 35px;
+}
+.cta_b:hover .text-wrap:before {
+  opacity: 1;
+  transform: translate(0, -50%);
+  top: 50%;
+}
+.cta_b:hover .i-img {
+  transform: translate(35px, 5%);
+  transition: all 0.8s ease-in-out;
+}
+.cta_b:hover .icon-img, .cta_b:hover .text-wrap {
+  background-color: #AD3434;
+}
+.cta_b .text-wrap {
+  background: #000000;
+  padding: 15px;
+  z-index: 1;
+  position: relative;
+  border-color: #8C929A;
+  border-style: solid;
+  border-width: 1px 0 1px 1px;
+  border-radius: 10px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.cta_b .text-wrap:before {
+  content: attr(data-hover);
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  color: #FFFFFF;
+  width: 100%;
+  opacity: 0;
+  transform: translate(100%, -50%);
+  transition: all 0.7s ease-in-out;
+}
+.cta_b .text-wrap::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #8C929A;
+  transition: 0.7s;
+}
+.cta_b .text-wrap .btn-link {
+  transition: all 0.7s ease-in-out;
+  text-decoration: none !important;
+}
+.cta_b .text-wrap .btn-link .link {
+  color: #FFFFFF !important;
+  font-weight: normal;
+  position: relative;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: "Manrope", sans-serif;
+}
+.cta_b .icon-img {
+  background: #000000;
+  padding: 15px;
+  z-index: 9;
+  border-color: #ABAFB4;
+  border-style: solid;
+  border-width: 1px 1px 1px 0;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.cta_b .icon-img:before {
+  content: "";
+  background: url("/wp-content/uploads/2022/12/right-2.png");
+  opacity: 0;
+  transform: translate(35%, -45%);
+  height: 20px;
+  width: 20px;
+  background-size: cover;
+  top: 50%;
+  right: 40px;
+  position: absolute;
+  transition: 0.7s;
+}
+.cta_b .i-img {
+  height: 20px;
+  width: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 header {
@@ -18,19 +209,13 @@ header {
   left: 0;
   z-index: 9999;
 }
-
 header .header-main {
   background: #000000;
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
-
 header .header-main .head-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 header .header-main .head-wrap .head-logo {
   background-image: url("/wp-content/uploads/2022/12/Logo.svg");
   background-position: 0;
@@ -41,27 +226,21 @@ header .header-main .head-wrap .head-logo {
   height: 100px;
   width: 240px;
 }
-
 header .header-main .head-wrap .nav-primary {
-  width: 100%;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  text-align: center;
+  align-self: center;
 }
-
 header .header-main .head-wrap .nav-primary #menu-primary-navigation {
   list-style: none;
   margin: 0;
   padding: 0;
   text-align: center;
 }
-
 header .header-main .head-wrap .nav-primary #menu-primary-navigation > li {
   margin: 0 30px;
   display: inline-block;
   line-height: 60px;
 }
-
 header .header-main .head-wrap .nav-primary #menu-primary-navigation > li a {
   font-size: 15px;
   text-decoration: none;
@@ -69,9 +248,21 @@ header .header-main .head-wrap .nav-primary #menu-primary-navigation > li a {
   font-family: "Manrope", sans-serif;
   letter-spacing: 0.84px;
 }
+header .header-main .head-wrap .search a {
+  width: 30px;
+  height: 30px;
+  background-image: url(/wp-content/uploads/2022/12/Icon-search.svg);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  display: block;
+}
+header .bg-header {
+  background: rgba(0, 0, 0, 0.8784313725);
+}
 
 h1 {
-  color: #ffff;
+  color: white;
   font-size: 18px;
   font-weight: 300;
 }
@@ -81,18 +272,15 @@ h1 {
   text-align: center;
   overflow-x: hidden;
 }
-
 .integration-sec .integration .inte-carousel {
   width: 100%;
   margin: 0px auto;
   -webkit-animation: scroll 40s linear infinite;
           animation: scroll 40s linear infinite;
 }
-
 .integration-sec .integration .slick-slide {
   margin: 10px;
 }
-
 .integration-sec .integration .slide-inte img {
   height: 200px;
 }

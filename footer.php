@@ -1,18 +1,37 @@
-<footer class="section-footer">
-    <div class="container-fluid">
-        <div class="col-lg-11 mx-auto">
-            <div class="row">
-                <div class="col-lg-3"></div>
-                <div class="col-lg-3">
-                <?php dynamic_sidebar('sidebar-footer-2'); ?>
-                </div>
-                <div class="col-lg-3"></div>
-                <div class="col-lg-3"></div>
-            </div>
-        </div>
-    </div>
 
+<footer>
+    <div class="container-fluid">
+		<div class="row">
+			<div class="col-md-11 mx-auto">
+				<div class="footer-top">
+					<div class="row">
+						<div class="col-lg-3 col-md-6 footer-logo">     
+
+                            <?php dynamic_sidebar('Footer-1'); ?>
+							
+						</div>
+						<div class="col-lg-3 col-md-6">
+						
+                            <?php dynamic_sidebar('Footer-2'); ?>
+
+						</div>
+						<div class="col-lg-2 mx-auto col-12">
+							
+                            <?php dynamic_sidebar('Footer-3'); ?>
+
+						</div>   
+                        <div class="col-lg-2 mx-auto">
+							
+                            <?php dynamic_sidebar('Footer-4'); ?>
+
+						</div>           
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </footer>
+
 <?php wp_footer(); ?>
 
 </body>
