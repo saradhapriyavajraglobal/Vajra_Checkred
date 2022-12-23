@@ -32,7 +32,7 @@ header .header-main .head-wrap {
 }
 
 header .header-main .head-wrap .head-logo {
-  background-image: url(/wp-content/uploads/2022/12/Logo.svg);
+  background-image: url("/wp-content/uploads/2022/12/Logo.svg");
   background-position: 0;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -95,5 +95,15 @@ h1 {
 
 .integration-sec .integration .slide-inte img {
   height: 200px;
+}
+
+.approach {
+  padding: 50px 0px;
+}
+
+.approach .round-bg-img {
+  background-image: url("/wp-content/uploads/2022/12/png-transparent-round-black-ring-illustration-circle-car-monochrome-graphy-line-oval-cercle-white-photography-monochrome.png");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 /*# sourceMappingURL=style.css.map */

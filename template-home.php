@@ -10,7 +10,6 @@
 
 <h1>Title</h1>
 
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. recusandae dolor nostrum minima vitae consectetur ut vero, ab eveniet consequatur porro quas, dolorum nemo soluta non enim voluptatem nihil in.</p>
 
 
 
@@ -21,16 +20,13 @@
               <div class="integration">
                   <div class="slide-inte">
                       <div class="inte-carousel">
-                      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png"/>
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png"/>
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png"/>
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png"/>
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png"/>
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png"/>
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png"/>
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png"/>
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png"/>
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png"/>
+                        <img src="/wp-content/uploads/2022/12/Logo-1.svg"/>
+                        <img src="/wp-content/uploads/2022/12/Group-429.svg"/>
+                        <img src="/wp-content/uploads/2022/12/Group-427.svg"/>
+                        <img src="/wp-content/uploads/2022/12/Group-423.svg"/>
+                        <img src="/wp-content/uploads/2022/12/Group-421.svg"/>
+                        <img src="/wp-content/uploads/2022/12/Group-420.svg">
+                        <img src="/wp-content/uploads/2022/12/Group-429.svg"/>
                       </div>
                   </div>
             </div>
@@ -38,17 +34,13 @@
             <div class="integration">
                     <div class="slide-inte">
                       <div class="inte-carousel-rtl" dir="rtl">
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png"/>
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png"/>
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png"/>
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png"/>
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png"/>
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png"/>
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png"/>
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png"/>
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png"/>
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png"/>
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png"/>
+                        <img src="/wp-content/uploads/2022/12/Group-431.svg"/>
+                        <img src="/wp-content/uploads/2022/12/Group-430.svg"/>
+                        <img src="/wp-content/uploads/2022/12/Group-426.svg"/>
+                        <img src="/wp-content/uploads/2022/12/Group-425.svg"/>
+                        <img src="/wp-content/uploads/2022/12/Group-422.svg"/>
+                        <img src="/wp-content/uploads/2022/12/Group-424.svg"/>
+                        <img src="/wp-content/uploads/2022/12/Group-419.svg"/>
                       </div>
                     </div>
             </div>
@@ -60,34 +52,6 @@
     
 </section>
 
-
-<section>
-   <div class="container-fluid">
-      <div class="row">
-         <div class="col-lg-4">
-            <div>
-              <h3>Inspect</h3>
-              <p>Inspect your cloud and SaaS asset inventory based on customized rules with the help of agentless scanners</p>
-            </div>
-            <div>
-              <h3>Report</h3>
-              <p>View all pertinent security information on a single dashboard and use the ticketing system to respond to alerts</p>
-            </div>
-         </div>
-         <div class="col-lg-4"></div>
-         <div class="col-lg-4">
-         <div>
-              <h3>Inspect</h3>
-              <p>Inspect your cloud and SaaS asset inventory based on customized rules with the help of agentless scanners</p>
-            </div>
-            <div>
-              <h3>Report</h3>
-              <p>View all pertinent security information on a single dashboard and use the ticketing system to respond to alerts</p>
-            </div>
-         </div>
-      </div>
-   </div>
-</section>
 
 
 
