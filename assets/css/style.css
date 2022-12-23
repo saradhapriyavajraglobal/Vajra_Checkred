@@ -9,6 +9,10 @@
   src: url("/wp-content/themes/Vajra_Checkred/assets/fonts/Manrope-Regular.ttf");
   font-weight: normal;
 }
+a {
+  text-decoration: none !important;
+}
+
 .cta {
   outline: none;
   border: 1px solid #fff;
@@ -66,6 +70,16 @@
   opacity: 0;
   transform: translate(100%, -50%);
   transition: all 0.7s ease-in-out;
+}
+.cta .text-wrap::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #fff;
+  transition: 0.7s;
 }
 .cta .text-wrap .btn-link {
   text-decoration: none !important;
