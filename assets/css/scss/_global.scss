@@ -3,3 +3,124 @@
     src: url("/wp-content/themes/Vajra_Checkred/assets/fonts/Manrope-Regular.ttf"); 
     font-weight: normal;
    }
+
+.cta {
+
+    outline: none;
+    border: 1px solid #fff;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    display: inline-flex;
+    justify-content: space-between;
+    
+    &:hover .text-wrap:after{
+
+        height: 70%;
+        top: 50%;
+        transform: translateY(-50%);
+
+    }
+
+    &:hover .btn-link{
+
+        opacity: 0; 
+        transform: translate(-100%,0);
+
+    }
+
+    &:hover .icon-img:before{
+
+        transform: translate(100%,-50%);
+        opacity: 1;
+        top: 50%;
+        right:35px;
+
+    }
+
+    &:hover .text-wrap:before{
+
+        opacity: 1; 
+        transform: translate(0,-50%);
+        top: 50%;
+
+    }
+
+    &:hover .i-img{
+
+        opacity: 0;
+
+
+    }
+
+    &:hover .icon-img{
+        background-color: rgb(135, 31, 31);
+    }
+    &:hover .text-wrap{
+        background-color: rgb(135, 31, 31);
+    }
+    .text-wrap {
+
+        background: black;
+        padding: 15px;
+        z-index: 1;
+        position: relative;
+        
+        &:before{
+
+            content: attr(data-hover);
+            position: absolute;
+            top: 50%;
+            left: 15px;
+            color: #fff;
+            width: 100%;
+            font-size: 16px;
+            opacity: 0;
+            transform: translate(100%,-50%);
+            transition: all .7s ease-in-out;
+
+        }
+
+        .btn-link{
+
+           .link {
+
+            color: #fff !important;
+            font-weight: 800;
+            position: relative;
+            } 
+
+        } 
+
+    }
+    .icon-img{
+
+        background: black;
+        padding: 15px;
+        z-index: 9;
+
+        &:before{
+
+            content: '';
+            background: url("right (2).png");
+            opacity: 0;
+            transform: translate(35%,-50%);
+            height: 20px;
+            width:20px;
+            background-size: cover;
+            top: 50%;
+            right: 40px;
+            position: absolute;
+            transition: 0.7s;
+
+        }
+    }
+    .i-img{
+        
+        height: 20px;
+        width:20px;
+        object-fit: contain;
+        transform: translateY(15%);
+
+    }
+}
