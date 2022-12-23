@@ -32,11 +32,18 @@
 
 								</nav>
 
-								<div class="head-cta">
-
-									<a class="cta" href="#"></a>
-
+							<div class="cta b">
+								<div data-hover="Request a demo" class="text-wrap">
+									<div class="btn-link">
+										<a class="link" href="#">Request a demo</a>
+									</div> 
+								</div> 
+								<div class="icon-img">
+									<span>
+										<img src="/wp-content/uploads/2022/12/right-3.png" class="i-img">
+									</span>
 								</div>
+							</div>
 
 							</div>
 
