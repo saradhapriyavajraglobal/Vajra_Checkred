@@ -53,14 +53,63 @@ header {
 							color: $pcw;
 							font-family: $primary-font;
 							letter-spacing: 0.84px;
+							-webkit-transition: .3s ease-in-out;
+							transition: all .3s ease-in-out;
 	
 						}
 	
 					}
 	
 				}
-	
-	
+				
+				
+				.menu-primary-navigation-container{
+
+					.menu-item-has-children{
+
+						ul.sub-menu {
+							background: $pcb;
+							position: absolute;
+							z-index: 1;
+							-webkit-box-shadow: 0 3px 12px rgb(0 0 0 / 15%);
+							box-shadow: 0 3px 12px rgb(0 0 0 / 15%);
+							opacity: 0;
+							visibility: hidden;
+							top: 70px;
+							list-style: none;
+							padding: 20px;
+							-webkit-transition: .3s ease-in-out;
+							transition: all .3s ease-in-out;
+
+							li{
+								line-height: 1.2;
+
+								a{
+									padding: 12px 10px;
+								}
+							}
+
+						}
+
+						>a{
+							background-image: url(/wp-content/uploads/2022/12/down-filled-triangular-arrow.png);
+							background-repeat: no-repeat;
+							background-position: right 5px;
+							padding-right: 20px;
+							background-size: 12px;
+						}
+
+						&:hover{
+
+							.sub-menu{
+								opacity: 1;
+    							visibility: visible;
+							}
+						}
+
+
+					}
+				}
 			}
 
 			.search{

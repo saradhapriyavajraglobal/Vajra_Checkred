@@ -8,12 +8,12 @@
 <?php while (have_posts()) : the_post(); ?>
   <?php get_template_part('templates/page', 'header'); ?>
 
-<h1>Title</h1>
+<!-- <h1>Title</h1> -->
 
 
 
 
-<section class="integration-sec">
+<!-- <section class="integration-sec">
     <div class="container-fluid">
       <div class="row">
           <div class="col-lg-12">
@@ -50,7 +50,7 @@
       
     </div>
     
-</section>
+</section> -->
 
 
 
