@@ -30,3 +30,30 @@ jQuery(document).ready(function(){
         }
     });
       });
+
+
+//Banner slider
+
+jQuery(document).ready(function(){
+jQuery('.banner-slider').slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  dots: false,
+  autoplay:false,
+  autoplaySpeed:2000,
+  asNavFor:'.content-wrap'
+});
+
+jQuery('.content-wrap').slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  dots: false,
+  autoplay:false,
+  autoplaySpeed:2000,
+  asNavFor:'.banner-slider'
+});
+});

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ---------- Font family ---------- */
 /* ---------- Font weight ---------- */
 /* ---------- Font size ---------- */
@@ -72,7 +73,7 @@ ul {
   padding: 0;
 }
 
-.cta_b {
+.cta-b {
   outline: none;
   overflow: hidden;
   position: relative;
@@ -81,7 +82,7 @@ ul {
   align-items: center;
   align-self: center;
 }
-.cta_b:hover .text-wrap {
+.cta-b:hover .text-wrap {
   border-color: #AD3434;
   border-style: solid;
   border-width: 1px 0 1px 1px;
@@ -89,17 +90,17 @@ ul {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
-.cta_b:hover .text-wrap:after {
+.cta-b:hover .text-wrap:after {
   height: 70%;
   top: 50%;
   transform: translateY(-50%);
   background-color: #FFFFFF;
 }
-.cta_b:hover .btn-link {
+.cta-b:hover .btn-link {
   opacity: 0;
   transform: translate(-100%, 0);
 }
-.cta_b:hover .icon-img {
+.cta-b:hover .icon-img {
   border-color: #AD3434;
   border-style: solid;
   border-width: 1px 1px 1px 0;
@@ -107,25 +108,25 @@ ul {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
-.cta_b:hover .icon-img:before {
+.cta-b:hover .icon-img:before {
   transform: translate(100%, -45%);
   opacity: 1;
   top: 50%;
   right: 35px;
 }
-.cta_b:hover .text-wrap:before {
+.cta-b:hover .text-wrap:before {
   opacity: 1;
   transform: translate(0, -50%);
   top: 50%;
 }
-.cta_b:hover .i-img {
+.cta-b:hover .i-img {
   transform: translate(35px, 5%);
   transition: all 0.8s ease-in-out;
 }
-.cta_b:hover .icon-img, .cta_b:hover .text-wrap {
+.cta-b:hover .icon-img, .cta-b:hover .text-wrap {
   background-color: #AD3434;
 }
-.cta_b .text-wrap {
+.cta-b .text-wrap {
   background: #000000;
   padding: 15px;
   z-index: 1;
@@ -137,7 +138,7 @@ ul {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
-.cta_b .text-wrap:before {
+.cta-b .text-wrap:before {
   content: attr(data-hover);
   position: absolute;
   top: 50%;
@@ -148,7 +149,7 @@ ul {
   transform: translate(100%, -50%);
   transition: all 0.7s ease-in-out;
 }
-.cta_b .text-wrap::after {
+.cta-b .text-wrap::after {
   position: absolute;
   content: "";
   right: 0;
@@ -158,11 +159,11 @@ ul {
   background-color: #8C929A;
   transition: 0.7s;
 }
-.cta_b .text-wrap .btn-link {
+.cta-b .text-wrap .btn-link {
   transition: all 0.7s ease-in-out;
   text-decoration: none !important;
 }
-.cta_b .text-wrap .btn-link .link {
+.cta-b .text-wrap .btn-link .link {
   color: #FFFFFF !important;
   font-weight: normal;
   position: relative;
@@ -170,7 +171,7 @@ ul {
   font-size: 15px;
   font-family: "Manrope", sans-serif;
 }
-.cta_b .icon-img {
+.cta-b .icon-img {
   background: #000000;
   padding: 15px;
   z-index: 9;
@@ -181,7 +182,7 @@ ul {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
-.cta_b .icon-img:before {
+.cta-b .icon-img:before {
   content: "";
   background: url("/wp-content/uploads/2022/12/right-2.png");
   opacity: 0;
@@ -194,11 +195,23 @@ ul {
   position: absolute;
   transition: 0.7s;
 }
-.cta_b .i-img {
+.cta-b .i-img {
   height: 20px;
   width: 20px;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.v-title-w {
+  color: #FFFFFF;
+  font-size: 48px;
+  font-family: "Manrope", sans-serif;
+}
+
+.tag-text {
+  color: #ABAFB4;
+  font-size: 16px;
+  font-family: "Manrope", sans-serif;
 }
 
 header {
@@ -322,4 +335,38 @@ h1 {
   background-image: url("/wp-content/uploads/2022/12/png-transparent-round-black-ring-illustration-circle-car-monochrome-graphy-line-oval-cercle-white-photography-monochrome.png");
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.c-banner {
+  background-image: url("/wp-content/uploads/2022/12/Banner-scaled.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+.c-banner .slick-prev {
+  z-index: 1;
+  left: 63%;
+}
+.c-banner .slick-next {
+  right: 20%;
+}
+.c-banner .slick-arrow {
+  top: 100%;
+  width: 50px;
+  height: 50px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #AD3434;
+  border-radius: 50%;
+}
+.c-banner .slick-next:before {
+  content: "⏵︎" !important;
+  color: #FFFFFF;
+  font-size: 15px;
+}
+.c-banner .slick-prev:before {
+  content: "⏴︎" !important;
+  color: #FFFFFF;
+  font-size: 15px;
 }/*# sourceMappingURL=style.css.map */

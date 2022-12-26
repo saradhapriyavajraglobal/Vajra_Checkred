@@ -24,7 +24,7 @@ body{
     padding: 0;
    }
 
-    .cta_b {
+    .cta-b {
 
         outline: none;
         overflow: hidden;
@@ -190,4 +190,15 @@ body{
             object-fit: contain;
 
         }
+    }
+
+    .v-title-w{
+        color: $pcw;
+        font-size: $v-title-fs1;
+        font-family: $primary-font;
+    }
+    .tag-text{
+        color: $pcg;
+        font-size: $v-para-fs1;
+        font-family: $primary-font;
     }

@@ -36,3 +36,40 @@ h1{
 
 }
 } 
+
+// Banner section
+
+.c-banner{
+  background-image: url("/wp-content/uploads/2022/12/Banner-scaled.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:500px;
+
+  .slick-prev{
+    z-index: 1;
+    left: 63%;
+  }
+  .slick-next{
+    right: 20%;
+  }
+  .slick-arrow{
+    top:100%;
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #AD3434;
+    border-radius: 50%;
+  }
+  .slick-next:before {
+    content: '⏵︎' !important;
+    color: $pcw;
+    font-size: 15px;
+  }
+ .slick-prev:before{
+  content: '⏴︎' !important;
+  color: $pcw;
+  font-size: 15px;
+  }
+}
