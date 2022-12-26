@@ -32,8 +32,8 @@
 
 								</nav>
 
-								<div class="cta_b">
-									<div data-hover="Request a demo" class="text-wrap">
+								<div class="cta-b">
+									<div data-hover="Request a Demo" class="text-wrap">
 										<div class="btn-link">
 											<a class="link" href="#">Request a Demo</a>
 										</div> 
@@ -45,11 +45,16 @@
 									</div>
 								</div>
 
-								<div class="search ms-4 order-xl-2 order-lg-1 order-md-1 order-1 align-self-center">
+								<div class="search ms-4 align-self-center">
 									
 									<a data-bs-toggle="modal" data-bs-target="#testi_modal" class="search-cta" href=""></a>
 								
 								</div>
+
+								<button class="nav-toggler">
+									<span></span>
+								</button>
+
 
 							</div>
 
