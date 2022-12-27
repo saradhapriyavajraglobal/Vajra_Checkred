@@ -211,68 +211,6 @@ endif;
 			</div>
 		</div>
 	</div>
-</section> 
-<?php if( have_rows('approach_wrap') ):
-  while ( have_rows('approach_wrap') ) : the_row();?>
-<section class="c-approch">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-9 mx-auto">
-       
-        <div class="row">
-        <h3 class="v-title-wwr1"><?php the_sub_field('a-sec-title');?></h3>
-          <div class="col-lg-4 col-md-4">
-            <div class="a-con content-wrapper">
-              <h4 class="s-title-text"><?php the_sub_field('title-1');?></h4>
-              <p class="s-text"><?php the_sub_field('desc-1');?></p>
-            </div>
-            <div class="a-con content-wrapper c-pad">
-              <h4 class="s-title-text"><?php the_sub_field('title-2');?></h4>
-              <p class="s-text"><?php the_sub_field('desc-2');?></p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4">
-           
-          </div>
-          <div class="col-lg-4 col-md-4">
-           <div class="a-con content-wrapper-s">
-              <h4 class="s-title-text"><?php the_sub_field('title-3');?></h4>
-              <p class="s-text"><?php the_sub_field('desc-3');?></p>
-            </div>
-            <div class="a-con content-wrapper-s c-pad1">
-              <h4 class="s-title-text"><?php the_sub_field('title-4');?></h4>
-              <p class="s-text"><?php the_sub_field('desc-4');?></p>
-            </div>
-          </div>
-        </div>
-        <div class="content-wrap-a text-center">
-              <h4 class="s-title-text"><?php the_sub_field('title-5');?></h4>
-              <p class="s-text"><?php the_sub_field('desc-5');?></p>
-            </div>
-      </div>
-    </div>
-  </div>
-</section>
-<?php
-  endwhile;
-  else :
-endif;
-?>
-<section class="c-form">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-11 mx-auto">
-        <div class="row">
-          <div class="col-lg-5 align-self-center">
-            <h3 class="v-title-wwr1"><?php the_field('form_title');?></h3>
-          </div>
-          <div class="col-lg-7 m-pad">
-            <?php the_field('home_form');?>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 </section>
 
 
