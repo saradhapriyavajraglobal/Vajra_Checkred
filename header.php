@@ -32,11 +32,10 @@
 
 								</nav>
 
-								
-									<a href="#" class="cta-b">
+								<a class="cta cta-b"   href="#">
 									<div data-hover="Request a Demo" class="text-wrap">
 										<div class="btn-link">
-											<span class="link" href="#">Request a Demo</span>
+											<span class="link">Request a Demo</span>
 										</div> 
 									</div> 
 									<div class="icon-img">
@@ -45,7 +44,6 @@
 										</span>
 									</div>
 								</a>
-								
 
 								<div class="search ms-4 align-self-center">
 									
