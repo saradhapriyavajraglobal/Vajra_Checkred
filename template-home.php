@@ -72,7 +72,7 @@ endif;
 
 <section class="cloud-tab-section">
 	<div class="container-fluid">
-		<p class="text-center main-tagline">Enhance your<span class="v-title-r">cloud and SaaS security with the CheckRed platform</span></p>
+		<h3 class="text-center main-tagline v-title-wwr">Enhance your <span class="v-tagline-r">cloud and SaaS security</span> </br> with the CheckRed platform</h3>
 		<div class="row">
 			<div class="col-lg-11 mx-auto">
 				<ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -89,20 +89,46 @@ endif;
 				<div id="content" class="tab-content" role="tablist">
 					<div class="card tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
 						<div class="card-header" role="tab" id="heading-1">
-							<h5 class="mb-0">
+							<h4 class="mb-0">
 								<a data-bs-toggle="collapse" href="#collapse-1" aria-expanded="true" aria-controls="collapse-1">CSPM</a>
-							</h5>
+							</h4>
 						</div>
 						<div id="collapse-1" class="collapse show" data-bs-parent="#content" role="tabpanel" aria-labelledby="heading-1">
 							<div class="card-body">
                 <div class="row">
-                  <div class="col-md-5 mx-auto align-self-center order-sm-12">
-                    <img class="img-fluid" src="/wp-content/uploads/2022/12/CSPM.webp" alt="">
+                  <div class="col-lg-6 col-md-12 me-auto align-self-center order-sm-12">
+                    <img class="img-fluid tab-img" src="/wp-content/uploads/2022/12/CSPM.webp" alt="">
                   </div>
-                  <div class="col-md-5 mx-auto align-self-center order-sm-12">
-                    <h3 class="main-title">Cloud Security Posture Management</h3>
-                    <P>Gain a comprehensive view of risk posture across your cloud assets. Identify, analyze, and prioritize these risks with accuracy and agility.</P>
-                    <a class="cta" href="#">Know More</a>
+                  <div class="col-lg-5 col-md-12 me-auto align-self-center order-sm-12 tab-content-wrap">
+                    <h3 class="main-title v-subtitle-w">Cloud Security Posture Management</h3>
+                    <P class="tag-text">Gain a comprehensive view of risk posture across your cloud assets. Identify, analyze, and prioritize these risks with accuracy and agility.</P>
+                    <P class="tag-text-w">Supported applications</P>
+                    <div class="img-slider">
+                      <div class="img-slide">
+                        <img src="/wp-content/uploads/2022/12/Aws-1.svg" class="slide-icon">
+                      </div>
+                      <div class="img-slide">
+                        <img src="/wp-content/uploads/2022/12/Azzure.svg" class="slide-icon">
+                      </div>
+                      <div class="img-slide">
+                        <img src="/wp-content/uploads/2022/12/google_cloud.svg" class="slide-icon">
+                      </div>
+                      <div class="img-slide">
+                        <img src="/wp-content/uploads/2022/12/Linode.svg" class="slide-icon">
+                      </div>
+                    </div>
+                    <a  href="#" class="cta cta-r">
+                      <div data-hover="Know More" class="text-wrap">
+                        <div class="btn-link">
+                          <span class="link">Know More</span>
+                        </div> 
+                      </div> 
+                      <div class="icon-img">
+                        <span>
+                          <img src="/wp-content/uploads/2022/12/right-2.png" class="i-img">
+                        </span>
+                      </div>
+                    </a>
                   </div>
 								</div>
 							</div>
@@ -110,20 +136,46 @@ endif;
 					</div>
 					<div class="card tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
 						<div class="card-header" role="tab" id="heading-2">
-							<h5 class="mb-0">
+							<h4 class="mb-0">
 								<a data-bs-toggle="collapse" href="#collapse-2" aria-expanded="true" aria-controls="collapse-2">SSPM</a>
-							</h5>
+							</h4>
 						</div>
 						<div id="collapse-2" class="collapse show" data-bs-parent="#content" role="tabpanel" aria-labelledby="heading-2">
 							<div class="card-body">
                 <div class="row">
-                  <div class="col-md-5 mx-auto align-self-center order-sm-12">
-                    <img class="img-fluid" src="/wp-content/uploads/2022/12/SSPM.webp" alt="">
+                  <div class="col-lg-6 col-md-12 me-auto align-self-center order-sm-12">
+                    <img class="img-fluid tab-img" src="/wp-content/uploads/2022/12/SSPM.webp" alt="">
                   </div>
-                  <div class="col-md-5 mx-auto align-self-center order-sm-12">
-                    <h3 class="main-title">SaaS security posture management</h3>
-                    <P>Shield your SaaS applications from unauthorized users and avoid data leakages. Get complete visibility, monitor access, and follow all compliance and security policies.</P>
-                    <a class="cta" href="#">Know More</a>
+                  <div class="col-lg-5 col-md-12 me-auto align-self-center order-sm-12 tab-content-wrap">
+                    <h3 class="main-title v-subtitle-w">SaaS security Posture Management</h3>
+                    <P class="tag-text">Shield your SaaS applications from unauthorized users and avoid data leakages. Get complete visibility, monitor access, and follow all compliance and security policies.</P>
+                    <P class="tag-text-w">Supported applications</P>
+                    <div class="img-slider">
+                      <div class="img-slide">
+                        <img src="/wp-content/uploads/2022/12/Aws-1.svg" class="slide-icon">
+                      </div>
+                      <div class="img-slide">
+                        <img src="/wp-content/uploads/2022/12/Azzure.svg" class="slide-icon">
+                      </div>
+                      <div class="img-slide">
+                        <img src="/wp-content/uploads/2022/12/google_cloud.svg" class="slide-icon">
+                      </div>
+                      <div class="img-slide">
+                        <img src="/wp-content/uploads/2022/12/Linode.svg" class="slide-icon">
+                      </div>
+                    </div>
+                    <a  href="#" class="cta cta-r">
+                      <div data-hover="Know More" class="text-wrap">
+                        <div class="btn-link">
+                          <span class="link">Know More</span>
+                        </div> 
+                      </div> 
+                      <div class="icon-img">
+                        <span>
+                          <img src="/wp-content/uploads/2022/12/right-2.png" class="i-img">
+                        </span>
+                      </div>
+                    </a>
                   </div>
 								</div>
 							</div>

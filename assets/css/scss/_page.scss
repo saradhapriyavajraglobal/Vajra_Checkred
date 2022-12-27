@@ -176,16 +176,194 @@
 //Tab Section
 
 
-.cloud-tab-section{
+.cloud-tab-section {
 
-  .nav-tabs{
+  position: relative;
 
-    .nav-item{
+  .nav-tabs {
 
-      a.active{
-        background-color: $pcb;
+    position: absolute;
+    right: 26%;
+    z-index: 999;
+    top: 25%;
+    border: none;
+
+    @include down(xxl){
+      right: 24%;
+      top: 23%;
+    }
+
+    @include down(xl){
+      right: 17%;
+      top: 25%;
+    }
+
+    @include down(lg){
+
+      display: none;
+
+    }
+
+    .nav-item {
+
+      a {
+        background-color: $scb;
+        color: $pcg;
+        font-size: 14px;
+        line-height: 24px;
+        border: 1px solid $pcg;
+        padding: 8px 45px;
+        margin-right: 15px;
+        border-radius: 5px;
+
+        &.active{
+          background-color: $scr;
+          color: $pcw;
+          border: 1px solid $pcr;
+        }
+
       }
 
     }
+
   }
+
+  .cloud-tab-content {
+
+    .tab-content {
+
+      .card {
+
+        background: $pcb;
+        border: none;
+
+        .card-header{
+
+            display: none;
+
+          @include down(lg){
+
+            display: block;
+
+          }
+        }
+
+        .card-body{
+
+          padding: 50px 0;
+
+          @include down(lg){
+
+            text-align: center;
+            
+          }
+
+          .tab-img{
+
+            height: 400px;
+            object-fit: cover;
+
+            @include down(xxl){
+              height: 325px;
+            }
+
+            @include down(xl){
+              height: 250px;
+            }
+
+            @include down(md){
+
+             height: auto;
+              
+            }
+
+          }
+
+          .tab-content-wrap{
+
+            .v-subtitle-w{
+              padding-top:50px;
+            }
+
+            .tag-text{
+              padding: 20px 0;
+              width: 70%;
+
+              @include down(xl){
+                width: 100%;
+              }
+
+              @include down(lg){
+
+              padding: 20px 40px;
+
+              }
+
+            }
+
+            .img-slider{
+
+              border: 0.5px solid $pcg;
+              border-radius: 5px;
+              padding: 0 10px;
+              margin-bottom: 30px;
+
+              @include down(lg){
+                margin: 0 auto;
+                width: max-content;
+                margin-bottom: 30px;
+              }
+
+              .img-slide{
+
+                display: inline-block;
+                border-right: 0.5px solid $pcg;
+
+               
+
+                  img{
+
+                    width: 100px;
+                    height: 50px;
+                    padding: 10px;
+                    margin: 10px 15px;
+                    position: relative;
+
+                    @include down(xxl){
+                      width: 85px;
+                    }
+
+                    @include down(xl){
+                      width: 80px;
+                      margin: 10px 0;
+                    }
+
+                    @include down(lg){
+                      width: 100px;
+                    }
+
+                    @include down(md){
+                      width: 80px;
+                    }
+
+                  }
+
+                  &:last-child{
+                    border-right: unset;
+                  }
+
+              }
+
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
 }
