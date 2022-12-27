@@ -680,6 +680,10 @@ header .bg-header {
           justify-content: space-between;
 }
 
+.integration-sec .v-title-wwr {
+  text-align: center;
+}
+
 .integration-sec .integration {
   padding-top: 20px;
   text-align: center;

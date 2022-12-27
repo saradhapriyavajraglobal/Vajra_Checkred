@@ -8,7 +8,16 @@ jQuery(document).ready(function(){
       autoplay:true,
       autoplaySpeed:0,
       speed: 4000,
-      cssEase: 'linear'
+      cssEase: 'linear',
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+          },
+        },
+      ],
 
     });
     
@@ -22,7 +31,16 @@ jQuery(document).ready(function(){
       autoplaySpeed:0,
       speed: 4000,
       rtl: true,
-      cssEase: 'linear'
+      cssEase: 'linear',
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+          },
+        },
+      ],
     });
   });
 
