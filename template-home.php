@@ -8,8 +8,6 @@
 <?php while (have_posts()) : the_post(); ?>
   <?php get_template_part('templates/page', 'header'); ?>
 
-<!-- <h1>Title</h1> -->
-
 <!-- Hero banner -->
 
 <?php if( have_rows('banner_wrap') ):
@@ -73,7 +71,7 @@ endif;
 
 
 <section class="cloud-tab-section">
-	<div class="container">
+	<div class="container-fluid">
 		<p class="text-center main-tagline">Enhance your<span class="v-title-r">cloud and SaaS security with the CheckRed platform</span></p>
 		<div class="row">
 			<div class="col-lg-12">
