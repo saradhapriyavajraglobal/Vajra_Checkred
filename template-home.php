@@ -241,7 +241,7 @@ endif;
       <div class="col-lg-11 mx-auto">
         <div class="row">
           <div class="col-lg-5 align-self-center">
-            <h3 class="v-title-wwr"><?php the_field('form_title');?></h3>
+            <h3 class="v-title-wwr1"><?php the_field('form_title');?></h3>
           </div>
           <div class="col-lg-7 m-pad">
             <?php the_field('home_form');?>

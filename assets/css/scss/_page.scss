@@ -64,6 +64,14 @@
 
     left: 63%;
 
+    @include down(md){
+
+      // right: 5% !important;
+      left: 40%;
+      transform: translate(-50%, -50%);
+
+    }
+
     &:before{
 
       content: '⏴︎' !important;
@@ -96,7 +104,9 @@
 
     @include down(md){
 
-      right: 5% !important;
+      // right: 5% !important;
+      right: 30%;
+      transform: translate(-50%, -50%);
 
     }
     @media(min-width:768px) and (max-width:992px){
@@ -158,6 +168,7 @@
 
     @include down(md){
       width: 90% !important;
+      display: none;
     }
     @include down(xl){
       width: 65%;
@@ -177,6 +188,7 @@
 
         width: 45%;
         right: 135px !important;
+        display: none;
 
       }
       @media(min-width:768px) and (max-width:992px){
@@ -208,6 +220,7 @@
     margin-bottom: 25px;
 
   }
+
   
 }
 .cloud-security{
@@ -273,6 +286,7 @@
 
     @include down(md){
       text-align: center;
+      padding: 5px 0px;
       
     }
 
@@ -280,6 +294,7 @@
   .v-title-wwr1{
 
     margin-bottom: 25px;
+    text-align: center;
 
   }
   .content-wrap-a{

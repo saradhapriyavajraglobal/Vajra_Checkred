@@ -1,11 +1,17 @@
 // Contact form
 
 .c-form{
-    
+
     background-image: url("/wp-content/uploads/2022/12/contact-form-scaled.webp");
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 50px;
+
+    .v-title-wwr1{
+        @include down (xl){
+            text-align: center;
+        }
+    }
 
     .contact-form{
 
