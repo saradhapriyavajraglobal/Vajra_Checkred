@@ -260,16 +260,36 @@ body{
         font-size: $v-title-fs1;
         font-family: $primary-font;
 
-        @include down(sm){
-            font-size: 26px;
+        // @include down(lg){
+        //     font-size: 35px;
+        // }
+        @include down(md){
+            font-size: 26px !important;
+        }
+        @include down(xl){
+            font-size: 35px;
         }
     }
     .v-title-wwr{
         color: $pcw;
         font-size: $v-title-fs2;
         font-family: $primary-font;
-        @include down(sm){
+        @include down(xl){
             font-size: 26px;
+            br{
+                display: none;
+            }
+        }
+    }
+    .v-title-wwr1{
+        font-size: $v1-title-fs1;
+        color: $pcw;
+        font-family: $primary-font;
+        line-height: 60px;
+        text-align: center;
+        @include down(xl){
+            font-size: 26px;
+            line-height: 40px;
         }
     }
     .tag-text{
@@ -279,4 +299,13 @@ body{
     }
     .v-tagline-r{
         color: $pcr;
+    }
+    .s-title-text{
+        font-size: $v-para-fs1;
+        color: $pcw;
+    }
+    .s-text{
+        font-size: $v-para-fs2;
+        color: $pcg;
+        line-height: $v-sub-title-fs1;
     }

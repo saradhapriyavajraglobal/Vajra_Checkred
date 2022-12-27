@@ -44,10 +44,13 @@ jQuery('.banner-slider').slick({
   infinite: true,
   slidesToShow: 1,
   slidesToScroll: 1,
+  fade:true,
   arrows: true,
   dots: false,
-  autoplay:false,
+  autoplay:true,
+  speed:1000,
   autoplaySpeed:7000,
+  cssEase: 'ease-in-out',
   asNavFor:'.content-wrap'
 });
 
@@ -55,10 +58,13 @@ jQuery('.content-wrap').slick({
   infinite: true,
   slidesToShow: 1,
   slidesToScroll: 1,
+  fade:true,
   arrows: false,
   dots: false,
-  autoplay:false,
+  autoplay:true,
+  speed:1000,
   autoplaySpeed:7000,
+  cssEase: 'ease-in-out',
   asNavFor:'.banner-slider'
 });
 });
