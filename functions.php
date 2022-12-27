@@ -45,52 +45,6 @@ add_theme_support( 'post-thumbnails' );
 	);
 
 
-  //         footer widgets
-//         
-         register_sidebar([
-    'name'          => __('Footer-1', 'sage'),
-    'id'            => 'sidebar-footer-1',
-    'before_widget' => '<section class="widget %1$s %2$s">',
-    'after_widget'  => '</section>',
-    'before_title'  => '<h2 class="widget-title">',
-    'after_title'   => '</h2>'
-    ]);
-
-    register_sidebar([
-      'name'          => __('Footer-2', 'sage'),
-      'id'            => 'sidebar-footer-2',
-      'before_widget' => '<section class="widget %1$s %2$s">',
-      'after_widget'  => '</section>',
-      'before_title'  => '<h3 class="widget-title">',
-      'after_title'   => '</h3>'
-      ]);
-
-      register_sidebar([
-        'name'          => __('Footer-3', 'sage'),
-        'id'            => 'sidebar-footer-3',
-        'before_widget' => '<section class="widget %1$s %2$s">',
-        'after_widget'  => '</section>',
-        'before_title'  => '<h3 class="widget-title">',
-        'after_title'   => '</h3>'
-        ]);
-
-        register_sidebar([
-          'name'          => __('Footer-4', 'sage'),
-          'id'            => 'sidebar-footer-4',
-          'before_widget' => '<section class="widget %1$s %2$s ">',
-          'after_widget'  => '</section>',
-          'before_title'  => '<h3 class="widget-title">',
-          'after_title'   => '</h3>'
-          ]);
-		  register_sidebar([
-			'name'          => __('Footer-5', 'sage'),
-			'id'            => 'sidebar-footer-5',
-			'before_widget' => '<section class="widget %1$s %2$s">',
-			'after_widget'  => '</section>',
-			'before_title'  => '<h3 class="widget-title">',
-			'after_title'   => '</h3>'
-			]);
-
 
 /*************************************/
 add_theme_support( 'menus' ); // <-- if you already see `menus` from your settings menu, you can ignore this line.

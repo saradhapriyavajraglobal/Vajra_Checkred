@@ -83,6 +83,7 @@ footer .footer-bottom .block-12.widget_block li a {
 
 body {
   background-color: #000000;
+  font-family: "Manrope", sans-serif;
 }
 
 a {
@@ -431,7 +432,6 @@ header .header-main .head-wrap .nav-primary .menu-primary-navigation-container .
   background: #000000;
   position: absolute;
   z-index: 1;
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
   opacity: 0;
   visibility: hidden;
   top: 70px;

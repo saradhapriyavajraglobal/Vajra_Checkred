@@ -29,15 +29,17 @@
 				</div>
 			</div>
 			<div class="footer-bottom">
-					<div class="row">
-						<div class="col-md-5 mx-auto">
+			<div class="col-md-11 mx-auto">
+				<div class="row">
+					<div class="col-md-6 mx-auto">
 						<p class="copy-right"><span>&copy; <?php echo date('Y'); ?> CheckRed All rights reserved</span></p>
-						</div>
-						<div class="col-md-5 mx-auto">
-							<?php dynamic_sidebar('Footer-Links'); ?>
-						</div>  
-					</div>                 
-				</div>
+					</div>
+					<div class="col-md-6 mx-auto">
+						<?php dynamic_sidebar('Footer-Links'); ?>
+					</div>  
+				</div>                 
+				</div>                 
+			</div>
 		</div>
 	</div>
 </footer>
