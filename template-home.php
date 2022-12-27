@@ -74,7 +74,7 @@ endif;
 	<div class="container-fluid">
 		<p class="text-center main-tagline">Enhance your<span class="v-title-r">cloud and SaaS security with the CheckRed platform</span></p>
 		<div class="row">
-			<div class="col-lg-12">
+			<div class="col-lg-11 mx-auto">
 				<ul class="nav nav-tabs" id="myTab" role="tablist">
 					<li class="nav-item" role="presentation">
 						<a class="nav-link active" id="tab1-tab" data-bs-toggle="tab" data-bs-target="#tab1" role="tab" aria-controls="tab1" aria-selected="true">CSPM</a>
@@ -85,7 +85,7 @@ endif;
 				</ul>
 			</div>
 
-			<div class="col-lg-12 cloud-tab-content">
+			<div class="col-lg-11 mx-auto cloud-tab-content">
 				<div id="content" class="tab-content" role="tablist">
 					<div class="card tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
 						<div class="card-header" role="tab" id="heading-1">
