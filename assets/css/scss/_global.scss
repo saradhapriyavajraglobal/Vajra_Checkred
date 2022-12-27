@@ -270,6 +270,10 @@ body{
         font-family: $primary-font;
         line-height: 60px;
         @include down(xl){
+            font-size: 35px;
+            line-height: 50px;
+        }
+        @include down(lg){
             font-size: 26px;
             br{
                 display: none;
