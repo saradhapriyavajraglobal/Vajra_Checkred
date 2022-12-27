@@ -697,6 +697,10 @@ header .bg-header {
   background-color: #000000;
 }
 
+.checkred-works .v-title-wwr {
+  text-align: center;
+}
+
 .checkred-works .responsive-tabs {
   padding: 1rem;
 }

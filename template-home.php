@@ -139,6 +139,9 @@ endif;
     <div class="container-fluid">
       <div class="row">
          <div class="col-lg-11 mx-auto">
+                  <?php if(get_field('checkred_title')): ?>
+                     <h2 class="v-title-wwr"><?php the_field('checkred_title'); ?></h2>
+                  <?php endif; ?>
               <?php if( have_rows('checkred_works') ): ?>
     
               <div class="responsive-tabs">

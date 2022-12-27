@@ -194,6 +194,9 @@
 //checkred works tab//
 
 .checkred-works{
+  .v-title-wwr{
+    text-align: center;
+  }
   .responsive-tabs {
       padding: 1rem;
       @include down(md){
@@ -352,13 +355,7 @@
               }
                
              }
-          //   //  .cont-img{
-          //   //     width:100%;
-          //   //   @include down(sm) { 
-          //   //       width: 100%;
-          //   //  }
-    
-          // }
+   
          }
          
      }
