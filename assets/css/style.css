@@ -257,9 +257,14 @@ ul {
   font-size: 48px;
   font-family: "Manrope", sans-serif;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .v-title-w {
-    font-size: 26px;
+    font-size: 26px !important;
+  }
+}
+@media (max-width: 1199px) {
+  .v-title-w {
+    font-size: 35px;
   }
 }
 
@@ -282,9 +287,26 @@ ul {
   font-family: "Manrope", sans-serif;
   line-height: 60px;
 }
-@media (max-width: 575px) {
+@media (max-width: 1199px) {
   .v-title-wwr {
     font-size: 26px;
+  }
+  .v-title-wwr br {
+    display: none;
+  }
+}
+
+.v-title-wwr1 {
+  font-size: 42px;
+  color: #FFFFFF;
+  font-family: "Manrope", sans-serif;
+  line-height: 60px;
+  text-align: center;
+}
+@media (max-width: 1199px) {
+  .v-title-wwr1 {
+    font-size: 26px;
+    line-height: 40px;
   }
 }
 
@@ -306,6 +328,17 @@ ul {
 
 .v-tagline-r {
   color: #AD3434;
+}
+
+.s-title-text {
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+.s-text {
+  font-size: 14px;
+  color: #ABAFB4;
+  line-height: 24px;
 }
 
 header {
@@ -422,7 +455,6 @@ header .header-main .head-wrap .nav-primary .menu-primary-navigation-container .
   background: #000000;
   position: absolute;
   z-index: 1;
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
   opacity: 0;
   visibility: hidden;
   top: 70px;
@@ -460,6 +492,78 @@ header .bg-header {
   background: rgba(0, 0, 0, 0.8784313725);
 }
 
+.c-form {
+  background-image: url("/wp-content/uploads/2022/12/contact-form-scaled.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 50px;
+}
+.c-form .contact-form {
+  background-color: #0A0C11;
+  border-radius: 15px;
+  border: 1px solid #8C929A;
+  padding: 50px;
+}
+@media (max-width: 575px) {
+  .c-form .contact-form {
+    padding: 20px;
+  }
+}
+.c-form .contact-form input, .c-form .contact-form textarea {
+  width: 100%;
+  background-color: #000000;
+  border: 1px solid #8C929A;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px 0px;
+  color: #ABAFB4;
+}
+.c-form .contact-form input:focus, .c-form .contact-form textarea:focus {
+  outline: unset;
+}
+.c-form .contact-form input[type=checkbox] {
+  width: unset;
+  color: #ABAFB4;
+  -webkit-appearance: none;
+  padding: 8px;
+  border: 1px solid #ABAFB4;
+  border-radius: unset;
+  background: #000000;
+  margin: 0px 10px 0px 0px;
+  vertical-align: text-bottom;
+}
+.c-form .contact-form input[type=checkbox]:checked:after {
+  content: "✓";
+  font-size: 14px;
+  position: absolute;
+  top: 1px;
+  left: 19px;
+  color: #fff;
+}
+.c-form .contact-form .wpcf7-acceptance .wpcf7-list-item-label {
+  color: #ABAFB4;
+}
+.c-form .contact-form button {
+  background-color: #000000;
+  border: unset;
+}
+.c-form .contact-form button input {
+  background-color: #AD3434;
+  border-radius: 5px;
+  padding: 10px 15px 10px 15px;
+  margin: unset;
+  border: #AD3434;
+  color: #FFFFFF;
+  transition: 0.7s;
+}
+.c-form .contact-form .wpcf7-spinner {
+  display: none;
+}
+.c-form .contact-form .form-bottom-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
 .integration-sec .integration {
   padding-top: 20px;
   text-align: center;
@@ -491,7 +595,7 @@ header .bg-header {
   background-image: url("/wp-content/uploads/2022/12/Banner-scaled.webp");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 600px;
+  height: auto;
   padding: 30px 0px;
 }
 .c-banner .banner-slider .banner-img {
@@ -499,7 +603,7 @@ header .bg-header {
   -o-object-fit: cover;
      object-fit: cover;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .c-banner .banner-slider .banner-img {
     height: unset;
   }
@@ -526,9 +630,19 @@ header .bg-header {
 .c-banner .slick-next:hover:before {
   color: #AD3434;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .c-banner .slick-next {
-    right: 5%;
+    right: 5% !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .c-banner .slick-next {
+    right: 23% !important;
+  }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  .c-banner .slick-next {
+    right: 17% !important;
   }
 }
 .c-banner .slick-arrow {
@@ -544,10 +658,10 @@ header .bg-header {
   border-radius: 50%;
   box-shadow: inset 0 0 0 0px #AD3434;
   z-index: 1;
-  transition: 0.8s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 .c-banner .slick-arrow:hover {
-  box-shadow: inset 0 0 0 40px white;
+  box-shadow: inset 0 0 0 40px #FFFFFF;
 }
 .c-banner .tag-text {
   margin: 25px 0px;
@@ -563,9 +677,14 @@ header .bg-header {
   font-family: "Manrope", sans-serif;
   position: relative;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .c-banner .counter-info {
-    width: 90%;
+    width: 90% !important;
+  }
+}
+@media (max-width: 1199px) {
+  .c-banner .counter-info {
+    width: 65%;
   }
 }
 .c-banner .counter-info:after {
@@ -577,15 +696,33 @@ header .bg-header {
   top: 9px;
   position: absolute;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .c-banner .counter-info:after {
     width: 45%;
-    right: 135px;
+    right: 135px !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .c-banner .counter-info:after {
+    right: 190px !important;
+  }
+}
+@media (max-width: 1199px) {
+  .c-banner .counter-info:after {
+    width: 45%;
+    right: 120px;
   }
 }
 
+.c-challenges {
+  padding: 30px 0px;
+}
 .c-challenges .v-title-wwr {
   margin-bottom: 25px;
+}
+
+.cloud-security {
+  padding: 30px 0px;
 }
 
 .cloud-tab-section {
@@ -736,4 +873,58 @@ header .bg-header {
 }
 .cloud-tab-section .cloud-tab-content .tab-content .card .card-body .tab-content-wrap .img-slider .img-slide:last-child {
   border-right: unset;
+}
+
+@media (max-width: 991px) {
+  .m-pad {
+    margin-top: 20px;
+  }
+}
+
+.c-approch {
+  height: auto;
+  padding-bottom: 50px;
+}
+.c-approch .content-wrapper {
+  text-align: right;
+}
+.c-approch .content-wrapper-s {
+  text-align: left;
+}
+.c-approch .c-pad1 {
+  margin-left: 24px;
+}
+@media (max-width: 767px) {
+  .c-approch .c-pad1 {
+    margin: unset;
+  }
+}
+@media (max-width: 1199px) {
+  .c-approch p br {
+    display: none;
+  }
+}
+.c-approch .c-pad {
+  margin-right: 24px;
+}
+@media (max-width: 767px) {
+  .c-approch .c-pad {
+    margin: unset;
+  }
+}
+.c-approch .a-con {
+  padding: 20px 0px;
+}
+@media (max-width: 767px) {
+  .c-approch .a-con {
+    text-align: center;
+  }
+}
+.c-approch .v-title-wwr1 {
+  margin-bottom: 25px;
+}
+@media (max-width: 767px) {
+  .c-approch .content-wrap-a br {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */

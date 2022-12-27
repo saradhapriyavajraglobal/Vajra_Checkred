@@ -39,17 +39,20 @@
   background-image: url("/wp-content/uploads/2022/12/Banner-scaled.webp");
   background-size: cover;
   background-repeat: no-repeat;
-  height:600px;
+  height:auto;
   padding: 30px 0px;
+
+  // @include down(lg){
+  //   height: 700px;
+  // }
 
   .banner-slider{
 
     .banner-img{
-
       height: 475px;
       object-fit: cover;
 
-      @include down(sm){
+      @include down(md){
         height: unset;
       }
 
@@ -86,11 +89,25 @@
   
     }
     &:hover:before{
+
       color: $pcr;
+
     }
 
-    @include down(sm){
-      right: 5%;
+    @include down(md){
+
+      right: 5% !important;
+
+    }
+    @media(min-width:768px) and (max-width:992px){
+
+      right: 23% !important;
+
+    }
+    @media(min-width:993px) and (max-width:1200px){
+
+      right: 17% !important;
+
     }
 
   }
@@ -103,18 +120,17 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    background-color: #AD3434;
-    // transition: box-shadow .4s, color .5s;
+    background-color: $pcr;
     background-size: 0 0;
     background-position: 50% 50%;
     border-radius: 50%;
-    box-shadow: inset 0 0 0 0px #AD3434;
+    box-shadow: inset 0 0 0 0px $pcr;
     z-index: 1;
-    transition: 0.8s ease-in-out;
+    transition: 0.5s ease-in-out;
 
     &:hover{
       
-      box-shadow: inset 0 0 0 40px white;
+      box-shadow: inset 0 0 0 40px $pcw;
     
     }
    
@@ -140,8 +156,11 @@
     font-family: $primary-font;
     position: relative;
 
-    @include down(sm){
-      width: 90%;
+    @include down(md){
+      width: 90% !important;
+    }
+    @include down(xl){
+      width: 65%;
     }
 
     &:after{
@@ -154,26 +173,48 @@
       top: 9px;
       position: absolute;
 
-      @include down(sm){
+      @include down(md){
 
         width: 45%;
-        right: 135px;
+        right: 135px !important;
 
       }
+      @media(min-width:768px) and (max-width:992px){
+
+        right: 190px !important;
+
+      }
+      @include down(xl){
+
+        width: 45%;
+        right: 120px;
+
+      }
+
 
     }
 
   }
 
 }
+
+// Challenges
 .c-challenges{
+
+  padding: 30px 0px;
+
   .v-title-wwr{
+
     margin-bottom: 25px;
+
   }
   
 }
+.cloud-security{
 
-//Tab Section
+  padding: 30px 0px;
+
+}
 
 
 .cloud-tab-section {
@@ -367,3 +408,82 @@
   }
 
 }
+.m-pad{
+
+  @include down(lg){
+    margin-top: 20px;
+  }
+
+}
+
+// Approach section
+
+.c-approch{
+
+  height: auto;
+  padding-bottom:50px;
+
+  .content-wrapper{
+
+    text-align: right;
+
+
+  }
+  .content-wrapper-s{
+
+    text-align: left;
+
+  }
+  .c-pad1{
+
+    margin-left: 24px;
+
+    @include down(md){
+      margin: unset;
+    }
+
+  }
+  p{
+
+    @include down(xl){
+      br{
+        display: none;
+      }
+    }
+
+  }
+  .c-pad{
+
+    margin-right: 24px;
+    @include down(md){
+      margin: unset;
+    }
+
+  }
+  .a-con {
+
+    padding: 20px 0px;
+
+    @include down(md){
+      text-align: center;
+      
+    }
+
+  }
+  .v-title-wwr1{
+
+    margin-bottom: 25px;
+
+  }
+  .content-wrap-a{
+
+    @include down(md){
+      br{
+        display: none;
+      }
+    }
+
+  }
+
+}
+
