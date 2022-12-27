@@ -40,36 +40,140 @@ h1{
 // Banner section
 
 .c-banner{
+
   background-image: url("/wp-content/uploads/2022/12/Banner-scaled.webp");
   background-size: cover;
   background-repeat: no-repeat;
-  height:500px;
+  height:600px;
+  padding: 30px 0px;
+
+  .banner-slider{
+
+    .banner-img{
+
+      height: 475px;
+      object-fit: cover;
+
+      @include down(sm){
+        height: unset;
+      }
+
+    }
+
+  }
 
   .slick-prev{
-    z-index: 1;
+
     left: 63%;
+
+    &:before{
+
+      content: '⏴︎' !important;
+      color: $pcw;
+      font-size: 15px;
+    
+      }
+      &:hover:before{
+        color: $pcr;
+      }
+
   }
+
   .slick-next{
-    right: 20%;
+
+    right: 23%;
+
+    &:before {
+
+      content: '⏵︎' !important;
+      color: $pcw;
+      font-size: 15px;
+  
+    }
+    &:hover:before{
+      color: $pcr;
+    }
+
+    @include down(sm){
+      right: 5%;
+    }
+
   }
+
   .slick-arrow{
-    top:100%;
-    width: 50px;
-    height: 50px;
+
+    top:102%;
+    width: 45px;
+    height: 45px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     background-color: #AD3434;
+    // transition: box-shadow .4s, color .5s;
+    background-size: 0 0;
+    background-position: 50% 50%;
     border-radius: 50%;
+    box-shadow: inset 0 0 0 0px #AD3434;
+    z-index: 1;
+    transition: 0.8s ease-in-out;
+
+    &:hover{
+      
+      box-shadow: inset 0 0 0 40px white;
+    
+    }
+   
+
   }
-  .slick-next:before {
-    content: '⏵︎' !important;
+
+  .tag-text{
+
+    margin: 25px 0px;
+
+  }
+  .i-img{
+
+    display: unset !important;
+
+  }
+  .counter-info{
+
     color: $pcw;
-    font-size: 15px;
+    font-size: $v-para-fs2;
+    margin: 0 auto;
+    width: 40%;
+    font-family: $primary-font;
+    position: relative;
+
+    @include down(sm){
+      width: 90%;
+    }
+
+    &:after{
+
+      content: '';
+      background-color: rgba(255,255,255,0.3);
+      width: 45%;
+      height: 1px;
+      right: 95px;
+      top: 9px;
+      position: absolute;
+
+      @include down(sm){
+
+        width: 45%;
+        right: 135px;
+
+      }
+
+    }
+
   }
- .slick-prev:before{
-  content: '⏴︎' !important;
-  color: $pcw;
-  font-size: 15px;
+
+}
+.c-challenges{
+  .v-title-wwr{
+    margin-bottom: 25px;
   }
+  
 }

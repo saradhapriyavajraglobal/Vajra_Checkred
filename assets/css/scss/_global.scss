@@ -1,6 +1,6 @@
 @font-face { 
     font-family: 'Manrope', sans-serif; 
-    src: url("/wp-content/themes/Vajra_Checkred/assets/fonts/Manrope-Regular.ttf"); 
+    src: url("http://checkred.local/wp-content/themes/Vajra_Checkred/assets/fonts/Manrope-Regular.ttf"); 
     font-weight: normal;
    }
 ////////////////////////////////////////////////////////////////////////////////////////////////*
@@ -24,7 +24,7 @@ body{
     padding: 0;
    }
 
-    .cta-b {
+    .cta {
 
         outline: none;
         overflow: hidden;
@@ -37,7 +37,7 @@ body{
         &:hover{
             .text-wrap{
 
-                border-color: $pcr;
+                // border-color: $pcr;
                 border-style: solid;
                 border-width: 1px 0 1px 1px;
                 border-radius: 10px;
@@ -63,7 +63,7 @@ body{
             }
             .icon-img{
 
-                border-color: $pcr;
+                // border-color: $pcr;
                 border-style: solid;
                 border-width: 1px 1px 1px 0;
                 border-radius: 10px;
@@ -93,19 +93,19 @@ body{
         
         
             }
-            .icon-img, .text-wrap{
-                background-color: $pcr;
-            }
+            // .icon-img, .text-wrap{
+            //     background-color: $pcr;
+            // }
         
         } 
 
         .text-wrap {
 
-            background: $pcb;
+            // background: $pcb;
             padding: 15px;
             z-index: 1;
             position: relative;
-            border-color: $scg;
+            // border-color: $scg;
             border-style: solid;
             border-width: 1px 0 1px 1px;
             border-radius: 10px;
@@ -118,7 +118,7 @@ body{
                 position: absolute;
                 top: 50%;
                 left: 15px;
-                color: $pcw;
+                
                 width: 100%;
                 opacity: 0;
                 transform: translate(100%,-50%);
@@ -157,10 +157,10 @@ body{
         }
         .icon-img{
 
-            background: $pcb;
+            // background: $pcb;
             padding: 15px;
             z-index: 9;
-            border-color: $pcg;
+            // border-color: $pcg;
             border-style: solid;
             border-width: 1px 1px 1px 0;
             border-radius: 10px;
@@ -170,7 +170,7 @@ body{
             &:before{
 
                 content: '';
-                background: url("/wp-content/uploads/2022/12/right-2.png");
+                // background: url("/wp-content/uploads/2022/12/right-2.png");
                 opacity: 0;
                 transform: translate(35%,-45%);
                 height: 20px;
@@ -191,14 +191,91 @@ body{
 
         }
     }
+    .cta-b{
+
+        
+       
+        .text-wrap, .icon-img {
+            background-color: $pcb;
+            border-color: $pcg;
+        }
+        &:hover{
+            .icon-img, .text-wrap{
+                background-color: $pcr;
+                border-color: $pcr;
+            }
+           
+            .icon-img{
+                &::before{
+                    background: url("/wp-content/uploads/2022/12/right-2.png");
+                    background-size: cover;
+    
+                }
+            }
+            .text-wrap{
+                &::before{
+                    color: $pcw;
+                }
+            }
+            
+        }
+        
+        // .icon-img{
+        //     border-color: $pcg;
+        //     background: $pcb;
+        // }
+    }
+    .cta-r{
+        .icon-img{
+            &::before{
+                background: url("/wp-content/uploads/2022/12/right-3.png");
+                background-size: cover;
+            }
+        }
+        .text-wrap, .icon-img {
+            background-color: $pcr;
+            border-color: $pcr;
+        }
+        &:hover{
+            .icon-img, .text-wrap{
+                background-color: $pcw;
+                border-color: $pcw;
+            }
+            // .link {
+            //     color: $pcr !important;
+            // }
+            .text-wrap{
+                &::before{
+                    color: $pcr !important;
+                    transition: all .7s ease-in-out;
+                }
+            }
+        }
+       
+    }
 
     .v-title-w{
         color: $pcw;
         font-size: $v-title-fs1;
         font-family: $primary-font;
+
+        @include down(sm){
+            font-size: 26px;
+        }
+    }
+    .v-title-wwr{
+        color: $pcw;
+        font-size: $v-title-fs2;
+        font-family: $primary-font;
+        @include down(sm){
+            font-size: 26px;
+        }
     }
     .tag-text{
         color: $pcg;
         font-size: $v-para-fs1;
         font-family: $primary-font;
+    }
+    .v-tagline-r{
+        color: $pcr;
     }

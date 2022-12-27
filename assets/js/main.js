@@ -42,7 +42,7 @@ jQuery('.banner-slider').slick({
   arrows: true,
   dots: false,
   autoplay:false,
-  autoplaySpeed:2000,
+  autoplaySpeed:7000,
   asNavFor:'.content-wrap'
 });
 
@@ -53,9 +53,17 @@ jQuery('.content-wrap').slick({
   arrows: false,
   dots: false,
   autoplay:false,
-  autoplaySpeed:2000,
+  autoplaySpeed:7000,
   asNavFor:'.banner-slider'
 });
+});
+var $status = jQuery('.counter-info');
+var $slickElement = jQuery('.banner-slider');
+
+$slickElement.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+    //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
+    var i = (currentSlide ? currentSlide : 0) + 1;
+    $status.html( i + ' / ' + slick.slideCount);
 });
       jQuery(function($){
         // define all UI variable
