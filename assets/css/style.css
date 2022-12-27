@@ -108,7 +108,6 @@ ul {
   position: relative;
   display: inline-flex;
   justify-content: space-between;
-  align-items: center;
   align-self: center;
 }
 .cta:hover .text-wrap {
@@ -159,6 +158,7 @@ ul {
   border-radius: 10px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
+  font-size: 15px;
 }
 .cta .text-wrap:before {
   content: attr(data-hover);
@@ -269,12 +269,32 @@ ul {
   }
 }
 
+.v-subtitle-w {
+  font-size: 24px;
+  color: #FFFFFF;
+  font-weight: 300;
+  font-family: "Manrope", sans-serif;
+  line-height: 36px;
+}
+@media (max-width: 1199px) {
+  .v-subtitle-w {
+    font-size: 22px;
+  }
+}
+
 .v-title-wwr {
   color: #FFFFFF;
   font-size: 40px;
   font-family: "Manrope", sans-serif;
+  line-height: 60px;
 }
 @media (max-width: 1199px) {
+  .v-title-wwr {
+    font-size: 35px;
+    line-height: 50px;
+  }
+}
+@media (max-width: 991px) {
   .v-title-wwr {
     font-size: 26px;
   }
@@ -300,6 +320,16 @@ ul {
   color: #ABAFB4;
   font-size: 16px;
   font-family: "Manrope", sans-serif;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+.tag-text-w {
+  color: #ABAFB4;
+  font-size: 16px;
+  font-family: "Manrope", sans-serif;
+  line-height: 28px;
+  margin-bottom: 10px;
 }
 
 .v-tagline-r {
@@ -480,7 +510,7 @@ header .bg-header {
   }
 }
 .c-form .contact-form {
-  background-color: #111111;
+  background-color: #0A0C11;
   border-radius: 15px;
   border: 1px solid #8C929A;
   padding: 50px;
@@ -545,6 +575,9 @@ header .bg-header {
   justify-content: space-between;
 }
 
+.integration-sec .v-title-wwr {
+  text-align: center;
+}
 .integration-sec .integration {
   padding-top: 20px;
   text-align: center;
@@ -715,6 +748,156 @@ header .bg-header {
   padding: 30px 0px;
 }
 
+.cloud-tab-section {
+  position: relative;
+}
+.cloud-tab-section .nav-tabs {
+  position: absolute;
+  right: 26%;
+  z-index: 999;
+  top: 25%;
+  border: none;
+}
+@media (max-width: 1399px) {
+  .cloud-tab-section .nav-tabs {
+    right: 24%;
+    top: 23%;
+  }
+}
+@media (max-width: 1199px) {
+  .cloud-tab-section .nav-tabs {
+    right: 17%;
+    top: 25%;
+  }
+}
+@media (max-width: 991px) {
+  .cloud-tab-section .nav-tabs {
+    display: none;
+  }
+}
+.cloud-tab-section .nav-tabs .nav-item a {
+  background-color: #0A0C11;
+  color: #ABAFB4;
+  font-size: 14px;
+  line-height: 24px;
+  border: 1px solid #ABAFB4;
+  padding: 8px 45px;
+  margin-right: 15px;
+  border-radius: 5px;
+}
+.cloud-tab-section .nav-tabs .nav-item a.active {
+  background-color: rgba(173, 52, 52, 0.1215686275);
+  color: #FFFFFF;
+  border: 1px solid #AD3434;
+}
+.cloud-tab-section .cloud-tab-content .tab-content .card {
+  background: #000000;
+  border: none;
+}
+.cloud-tab-section .cloud-tab-content .tab-content .card .card-header {
+  display: none;
+}
+@media (max-width: 991px) {
+  .cloud-tab-section .cloud-tab-content .tab-content .card .card-header {
+    display: block;
+  }
+}
+.cloud-tab-section .cloud-tab-content .tab-content .card .card-body {
+  padding: 50px 0;
+}
+@media (max-width: 991px) {
+  .cloud-tab-section .cloud-tab-content .tab-content .card .card-body {
+    text-align: center;
+  }
+}
+.cloud-tab-section .cloud-tab-content .tab-content .card .card-body .tab-img {
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 1399px) {
+  .cloud-tab-section .cloud-tab-content .tab-content .card .card-body .tab-img {
+    height: 325px;
+  }
+}
+@media (max-width: 1199px) {
+  .cloud-tab-section .cloud-tab-content .tab-content .card .card-body .tab-img {
+    height: 250px;
+  }
+}
+@media (max-width: 767px) {
+  .cloud-tab-section .cloud-tab-content .tab-content .card .card-body .tab-img {
+    height: auto;
+  }
+}
+.cloud-tab-section .cloud-tab-content .tab-content .card .card-body .tab-content-wrap .v-subtitle-w {
+  padding-top: 50px;
+}
+.cloud-tab-section .cloud-tab-content .tab-content .card .card-body .tab-content-wrap .tag-text {
+  padding: 20px 0;
+  width: 70%;
+}
+@media (max-width: 1199px) {
+  .cloud-tab-section .cloud-tab-content .tab-content .card .card-body .tab-content-wrap .tag-text {
+    width: 100%;
+  }
+}
+@media (max-width: 991px) {
+  .cloud-tab-section .cloud-tab-content .tab-content .card .card-body .tab-content-wrap .tag-text {
+    padding: 20px 40px;
+  }
+}
+.cloud-tab-section .cloud-tab-content .tab-content .card .card-body .tab-content-wrap .img-slider {
+  border: 0.5px solid #ABAFB4;
+  border-radius: 5px;
+  padding: 0 10px;
+  margin-bottom: 30px;
+}
+@media (max-width: 991px) {
+  .cloud-tab-section .cloud-tab-content .tab-content .card .card-body .tab-content-wrap .img-slider {
+    margin: 0 auto;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin-bottom: 30px;
+  }
+}
+.cloud-tab-section .cloud-tab-content .tab-content .card .card-body .tab-content-wrap .img-slider .img-slide {
+  display: inline-block;
+  border-right: 0.5px solid #ABAFB4;
+}
+.cloud-tab-section .cloud-tab-content .tab-content .card .card-body .tab-content-wrap .img-slider .img-slide img {
+  width: 100px;
+  height: 50px;
+  padding: 10px;
+  margin: 10px 15px;
+  position: relative;
+}
+@media (max-width: 1399px) {
+  .cloud-tab-section .cloud-tab-content .tab-content .card .card-body .tab-content-wrap .img-slider .img-slide img {
+    width: 85px;
+  }
+}
+@media (max-width: 1199px) {
+  .cloud-tab-section .cloud-tab-content .tab-content .card .card-body .tab-content-wrap .img-slider .img-slide img {
+    width: 80px;
+    margin: 10px 0;
+  }
+}
+@media (max-width: 991px) {
+  .cloud-tab-section .cloud-tab-content .tab-content .card .card-body .tab-content-wrap .img-slider .img-slide img {
+    width: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .cloud-tab-section .cloud-tab-content .tab-content .card .card-body .tab-content-wrap .img-slider .img-slide img {
+    width: 80px;
+  }
+}
+.cloud-tab-section .cloud-tab-content .tab-content .card .card-body .tab-content-wrap .img-slider .img-slide:last-child {
+  border-right: unset;
+}
+
 @media (max-width: 991px) {
   .m-pad {
     margin-top: 20px;
@@ -768,5 +951,168 @@ header .bg-header {
 @media (max-width: 767px) {
   .c-approch .content-wrap-a br {
     display: none;
+  }
+}
+
+.checkred-works .v-title-wwr {
+  text-align: center;
+}
+.checkred-works .responsive-tabs {
+  padding: 1rem;
+}
+@media (max-width: 767px) {
+  .checkred-works .responsive-tabs {
+    padding: unset;
+  }
+}
+.checkred-works .responsive-tabs h3 {
+  color: #FFFFFF;
+  font-size: 24px;
+  letter-spacing: 0px;
+  line-height: 34px;
+}
+.checkred-works .responsive-tabs p {
+  color: #ABAFB4;
+}
+.checkred-works .responsive-tabs .nav-tabs {
+  display: none;
+  border-bottom: unset;
+}
+.checkred-works .responsive-tabs .nav-tabs .nav-item {
+  padding-right: 20px;
+}
+@media (max-width: 991px) {
+  .checkred-works .responsive-tabs .nav-tabs .nav-item {
+    margin-right: 8px;
+    padding-right: unset;
+  }
+}
+@media screen and (min-width: 767px) {
+  .checkred-works .responsive-tabs .nav-tabs {
+    justify-content: center;
+    list-style: none;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .checkred-works .responsive-tabs .nav-tabs li {
+    flex: 1;
+  }
+  .checkred-works .responsive-tabs .nav-tabs li a {
+    color: #ABAFB4;
+    display: block;
+    margin: 0;
+    position: relative;
+    padding: 10px 12px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 6px;
+    background-color: #0A0C11;
+    font-size: 14px;
+    border: 1px solid #8C929A;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .checkred-works .responsive-tabs .nav-tabs li a {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 991px) {
+  .checkred-works .responsive-tabs .nav-tabs li a {
+    font-size: 11px;
+    padding: 10px 6px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .checkred-works .responsive-tabs .nav-tabs li a.active {
+    border: 1px solid #AD3434;
+    color: #FFFFFF;
+    border-radius: 6px;
+    background: rgba(173, 52, 52, 0.1215686275);
+  }
+}
+@media screen and (min-width: 767px) {
+  .checkred-works .responsive-tabs .card {
+    border: none;
+  }
+  .checkred-works .responsive-tabs .card .card-header {
+    display: none;
+  }
+  .checkred-works .responsive-tabs .card .collapse {
+    display: block;
+  }
+  .checkred-works .responsive-tabs .card .card-body {
+    background-color: #000000;
+  }
+}
+.checkred-works .responsive-tabs .cont-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 580px;
+}
+@media (max-width: 1199px) {
+  .checkred-works .responsive-tabs .cont-img {
+    height: 400px;
+  }
+}
+@media (max-width: 767px) {
+  .checkred-works .responsive-tabs .cont-img {
+    background-size: contain;
+    height: 230px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .checkred-works .responsive-tabs .tab-pane.fade {
+    display: block;
+    opacity: 1;
+    text-align: center;
+    border: none;
+    width: 100%;
+    padding: 0 40px;
+  }
+}
+@media screen and (max-width: 767px) and (max-width: 575px) {
+  .checkred-works .responsive-tabs .tab-pane.fade {
+    padding: 10px;
+    text-align: unset;
+    background: unset;
+  }
+}
+@media screen and (max-width: 767px) {
+  .checkred-works .responsive-tabs .tab-pane.fade .card-header {
+    display: block;
+    margin: 0;
+    position: relative;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 6px;
+    background-color: #0A0C11;
+    font-size: 14px;
+    border: 1px solid #8C929A;
+  }
+  .checkred-works .responsive-tabs .tab-pane.fade .card-header.active {
+    border: 1px solid #AD3434;
+    color: #FFFFFF;
+    border-radius: 6px;
+    background: rgba(173, 52, 52, 0.1215686275);
+  }
+  .checkred-works .responsive-tabs .tab-pane.fade .card-header.active a {
+    color: white;
+  }
+}
+@media screen and (max-width: 767px) {
+  .checkred-works .responsive-tabs .tab-pane.fade a {
+    text-decoration: none;
+    color: #ABAFB4;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .checkred-works .responsive-tabs .tab-pane.fade a.active {
+    color: white;
   }
 }/*# sourceMappingURL=style.css.map */
