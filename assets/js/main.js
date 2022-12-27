@@ -100,3 +100,21 @@ $slickElement.on('init reInit afterChange', function (event, slick, currentSlide
             }
           }
       });
+
+
+
+  //Works tab section//
+  
+  jQuery(document).ready(function () {
+    // Add active for collapse element which is open by default
+    jQuery(".collapse.show").each(function () {
+      jQuery(this).prev(".card-header").addClass("active");
+    });
+  
+    //  active class on show hide of collapse element
+    jQuery(".collapse").on('show.bs.collapse', function () {
+      jQuery(this).prev(".card-header").addClass("active");
+    }).on('hide.bs.collapse', function () {
+      jQuery(this).prev(".card-header").removeClass("active");
+    });
+  });
