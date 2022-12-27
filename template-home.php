@@ -67,61 +67,6 @@
 endif;
 ?>
 
-<?php if( have_rows('challenges_wrap') ):
-  while ( have_rows('challenges_wrap') ) : the_row();?>
-    <section class="c-challenges">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-11 me-auto">
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="img-container">
-                  <?php if( get_sub_field('image') ): ?>
-                    <img class="ch-img img-fluid" src="<?php the_sub_field('image'); ?>" />
-                  <?php endif; ?>
-                </div>
-              </div>
-              <div class="col-lg-6 align-self-center">
-                <h1 class="v-title-wwr"><?php the_sub_field('title');?></h1>
-                <p class="tag-text c-des"><?php the_sub_field('description');?></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  <?php
-  endwhile;
-  else :
-endif;
-?>
-
-<?php if( have_rows('client_cloud') ):
-  while ( have_rows('client_cloud') ) : the_row();?>
-    <section class="cloud-security">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-5 mx-auto align-self-center">
-            <h1 class="v-title-wwr"><?php the_sub_field('title');?></h1>
-            <p class="tag-text c-des"><?php the_sub_field('description');?></p>
-          </div>
-          <div class="col-lg-6 pe-0 align-self-center">
-            <div class="img-container">
-              <?php if( get_sub_field('image') ): ?>
-                <img class="ch-img img-fluid" src="<?php the_sub_field('image'); ?>" />
-              <?php endif; ?>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  <?php
-  endwhile;
-  else :
-endif;
-?>
-
-
 
 
 
