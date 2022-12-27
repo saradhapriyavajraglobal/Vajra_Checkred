@@ -160,7 +160,7 @@ if( function_exists('acf_add_options_page') ) {
                   'after_title'   => '</h3>'
                   ]);
               register_sidebar([
-              'name'          => __('Footer-5', 'sage'),
+              'name'          => __('Footer-Links', 'sage'),
               'id'            => 'sidebar-footer-5',
               'before_widget' => '<section class="widget %1$s %2$s">',
               'after_widget'  => '</section>',
