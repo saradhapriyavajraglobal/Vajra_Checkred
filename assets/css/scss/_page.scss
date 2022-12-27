@@ -39,17 +39,20 @@
   background-image: url("/wp-content/uploads/2022/12/Banner-scaled.webp");
   background-size: cover;
   background-repeat: no-repeat;
-  height:600px;
+  height:auto;
   padding: 30px 0px;
+
+  // @include down(lg){
+  //   height: 700px;
+  // }
 
   .banner-slider{
 
     .banner-img{
-
       height: 475px;
       object-fit: cover;
 
-      @include down(sm){
+      @include down(md){
         height: unset;
       }
 
@@ -86,11 +89,25 @@
   
     }
     &:hover:before{
+
       color: $pcr;
+
     }
 
-    @include down(sm){
-      right: 5%;
+    @include down(md){
+
+      right: 5% !important;
+
+    }
+    @media(min-width:768px) and (max-width:992px){
+
+      right: 23% !important;
+
+    }
+    @media(min-width:993px) and (max-width:1200px){
+
+      right: 17% !important;
+
     }
 
   }
@@ -103,18 +120,17 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    background-color: #AD3434;
-    // transition: box-shadow .4s, color .5s;
+    background-color: $pcr;
     background-size: 0 0;
     background-position: 50% 50%;
     border-radius: 50%;
-    box-shadow: inset 0 0 0 0px #AD3434;
+    box-shadow: inset 0 0 0 0px $pcr;
     z-index: 1;
-    transition: 0.8s ease-in-out;
+    transition: 0.5s ease-in-out;
 
     &:hover{
       
-      box-shadow: inset 0 0 0 40px white;
+      box-shadow: inset 0 0 0 40px $pcw;
     
     }
    
@@ -140,8 +156,11 @@
     font-family: $primary-font;
     position: relative;
 
-    @include down(sm){
-      width: 90%;
+    @include down(md){
+      width: 90% !important;
+    }
+    @include down(xl){
+      width: 65%;
     }
 
     &:after{
@@ -154,211 +173,317 @@
       top: 9px;
       position: absolute;
 
-      @include down(sm){
+      @include down(md){
 
         width: 45%;
-        right: 135px;
+        right: 135px !important;
 
       }
+      @media(min-width:768px) and (max-width:992px){
+
+        right: 190px !important;
+
+      }
+      @include down(xl){
+
+        width: 45%;
+        right: 120px;
+
+      }
+
 
     }
 
   }
 
 }
+
+// Challenges
 .c-challenges{
+
+  padding: 30px 0px;
+
   .v-title-wwr{
+
     margin-bottom: 25px;
+
   }
   
 }
+.cloud-security{
 
-//Tab Section
+  padding: 30px 0px;
+
+}
 
 
-.cloud-tab-section{
+.cloud-tab-section {
 
-  .nav-tabs{
+  position: relative;
 
-    .nav-item{
+  .nav-tabs {
 
-      a.active{
-        background-color: $pcb;
+    position: absolute;
+    right: 26%;
+    z-index: 999;
+    top: 25%;
+    border: none;
+
+    @include down(xxl){
+      right: 24%;
+      top: 23%;
+    }
+
+    @include down(xl){
+      right: 17%;
+      top: 25%;
+    }
+
+    @include down(lg){
+
+      display: none;
+
+    }
+
+    .nav-item {
+
+      a {
+        background-color: $scb;
+        color: $pcg;
+        font-size: 14px;
+        line-height: 24px;
+        border: 1px solid $pcg;
+        padding: 8px 45px;
+        margin-right: 15px;
+        border-radius: 5px;
+
+        &.active{
+          background-color: $scr;
+          color: $pcw;
+          border: 1px solid $pcr;
+        }
+
       }
 
     }
+
   }
-}
 
+  .cloud-tab-content {
 
-//checkred works tab//
+    .tab-content {
 
-.checkred-works{
-  .v-title-wwr{
-    text-align: center;
-  }
-  .responsive-tabs {
-      padding: 1rem;
-      @include down(md){
-        padding: unset;
-      }
-      h3{
-        color: $pcw;
-        font-size: $v-sub-title-fs1;
-        letter-spacing: 0px;
-        line-height: 34px;
-      }
-      p{
-        color:$pcg;
-      }
-     .nav-tabs {
-         display: none;
-         border-bottom: unset;
-         .nav-item{
-          padding-right: 20px;
+      .card {
 
-         @include down(lg) {
-            margin-right: 8px;
-            padding-right: unset;
+        background: $pcb;
+        border: none;
+
+        .card-header{
+
+            display: none;
+
+          @include down(lg){
+
+            display: block;
+
           }
-         }
-     }
- 
-     @media screen and (min-width: 767px) {
-         .nav-tabs {
-          
-             justify-content: center;
-             list-style: none;
-             margin: 0 auto;
-             overflow: hidden;
-             padding: 0;
-             position: relative;
-             width: 100%;
-             display: flex;
-             flex-wrap: wrap; 
-
-             li{
-                   -webkit-flex: 1;
-                   flex: 1;
-               a{
-                 
-                 color: $pcg;
-                 display: block;
-                 margin: 0;
-                 position: relative;
-                 padding: 10px 12px;
-                 text-align: center;
-                 text-decoration: none; 
-                 border-radius: 6px;
-                 background-color: $scb;
-                 font-size: 14px;
-                 border: 1px solid $scg;
-                 @include down(xl){
-                  font-size: 12px;
-                }
-                  @include down(lg){
-                    font-size: 11px;
-                    padding: 10px 6px;
-                  }
-                  
-                   &.active {
-                       border: 1px solid  $pcr;
-                       color: $pcw;
-                       border-radius: 6px;
-                       background: $scr;
-                   }  
-               }
-           }
-         }
- 
-         .card {
-             border: none;
-             
-             .card-header {
-                 display: none;
-                
-             }
- 
-             .collapse {
-                 display: block;
-             }
-             .card-body{
-              background-color: $pcb;
-             
-              
-             }
-         }
-     }
-     .cont-img{
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 580px;
-        @include down(xl){
-          height: 400px;
         }
-        @include down(md){
-          background-size: contain;
-          height: 230px;
-        }
-     }
- 
-     @media screen and (max-width: 767px) {
-         .tab-pane.fade{
-             display: block;
-             opacity: 1;
-             text-align: center;
-             border: none;
-             width: 100%;
-             padding: 0 40px;
 
+        .card-body{
 
-             @include down(sm) { 
-                  padding:10px;
-                  text-align: unset;
-                  background:unset;
-             }
-  
+          padding: 50px 0;
+
+          @include down(lg){
+
+            text-align: center;
+            
+          }
+
+          .tab-img{
+
+            height: 400px;
+            object-fit: cover;
+
+            @include down(xxl){
+              height: 325px;
+            }
+
+            @include down(xl){
+              height: 250px;
+            }
+
+            @include down(md){
+
+             height: auto;
               
-             .card-header{
-                display: block;
-                margin: 0;
-                position: relative;
-                padding: 10px 0;
-                text-align: center;
-                text-decoration: none; 
-                border-radius: 6px;
-                background-color: $scb;
-                font-size: 14px;
-                border: 1px solid $scg;
+            }
 
-                  
-                 &.active{
-                      border: 1px solid  $pcr;
-                      color: $pcw;
-                      border-radius: 6px;
-                      background: $scr;
-                       a{
-                          color: white;
-                       }
-                     } 
-                 }
-                 
-             a{ 
-               text-decoration: none;
-               color: $pcg;
-               font-weight: 400;
-               font-size: 14px;
-              &.active{
-                  
-                  color: white;
-                 
+          }
+
+          .tab-content-wrap{
+
+            .v-subtitle-w{
+              padding-top:50px;
+            }
+
+            .tag-text{
+              padding: 20px 0;
+              width: 70%;
+
+              @include down(xl){
+                width: 100%;
               }
+
+              @include down(lg){
+
+              padding: 20px 40px;
+
+              }
+
+            }
+
+            .img-slider{
+
+              border: 0.5px solid $pcg;
+              border-radius: 5px;
+              padding: 0 10px;
+              margin-bottom: 30px;
+
+              @include down(lg){
+                margin: 0 auto;
+                width: max-content;
+                margin-bottom: 30px;
+              }
+
+              .img-slide{
+
+                display: inline-block;
+                border-right: 0.5px solid $pcg;
+
                
-             }
-   
-         }
-         
-     }
-     
+
+                  img{
+
+                    width: 100px;
+                    height: 50px;
+                    padding: 10px;
+                    margin: 10px 15px;
+                    position: relative;
+
+                    @include down(xxl){
+                      width: 85px;
+                    }
+
+                    @include down(xl){
+                      width: 80px;
+                      margin: 10px 0;
+                    }
+
+                    @include down(lg){
+                      width: 100px;
+                    }
+
+                    @include down(md){
+                      width: 80px;
+                    }
+
+                  }
+
+                  &:last-child{
+                    border-right: unset;
+                  }
+
+              }
+
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
   }
+
 }
+.m-pad{
+
+  @include down(lg){
+    margin-top: 20px;
+  }
+
+}
+
+// Approach section
+
+.c-approch{
+
+  height: auto;
+  padding-bottom:50px;
+
+  .content-wrapper{
+
+    text-align: right;
+
+
+  }
+  .content-wrapper-s{
+
+    text-align: left;
+
+  }
+  .c-pad1{
+
+    margin-left: 24px;
+
+    @include down(md){
+      margin: unset;
+    }
+
+  }
+  p{
+
+    @include down(xl){
+      br{
+        display: none;
+      }
+    }
+
+  }
+  .c-pad{
+
+    margin-right: 24px;
+    @include down(md){
+      margin: unset;
+    }
+
+  }
+  .a-con {
+
+    padding: 20px 0px;
+
+    @include down(md){
+      text-align: center;
+      
+    }
+
+  }
+  .v-title-wwr1{
+
+    margin-bottom: 25px;
+
+  }
+  .content-wrap-a{
+
+    @include down(md){
+      br{
+        display: none;
+      }
+    }
+
+  }
+
+}
+

@@ -33,13 +33,11 @@ body{
         position: relative;
         display: inline-flex;
         justify-content: space-between;
-        align-items: center;
         align-self: center;
         
         &:hover{
             .text-wrap{
 
-                // border-color: $pcr;
                 border-style: solid;
                 border-width: 1px 0 1px 1px;
                 border-radius: 10px;
@@ -54,7 +52,6 @@ body{
                 height: 70%;
                 top: 50%;
                 transform: translateY(-50%);
-                background-color: $pcw;
         
             }
             .btn-link{
@@ -65,7 +62,6 @@ body{
             }
             .icon-img{
 
-                // border-color: $pcr;
                 border-style: solid;
                 border-width: 1px 1px 1px 0;
                 border-radius: 10px;
@@ -95,24 +91,20 @@ body{
         
         
             }
-            // .icon-img, .text-wrap{
-            //     background-color: $pcr;
-            // }
-        
+      
         } 
 
         .text-wrap {
 
-            // background: $pcb;
             padding: 15px;
             z-index: 1;
             position: relative;
-            // border-color: $scg;
             border-style: solid;
             border-width: 1px 0 1px 1px;
             border-radius: 10px;
             border-top-right-radius: 0;
             border-bottom-right-radius: 0;
+            font-size: 15px;
 
             &:before{
 
@@ -120,7 +112,6 @@ body{
                 position: absolute;
                 top: 50%;
                 left: 15px;
-                
                 width: 100%;
                 opacity: 0;
                 transform: translate(100%,-50%);
@@ -159,10 +150,8 @@ body{
         }
         .icon-img{
 
-            // background: $pcb;
             padding: 15px;
             z-index: 9;
-            // border-color: $pcg;
             border-style: solid;
             border-width: 1px 1px 1px 0;
             border-radius: 10px;
@@ -172,7 +161,6 @@ body{
             &:before{
 
                 content: '';
-                // background: url("/wp-content/uploads/2022/12/right-2.png");
                 opacity: 0;
                 transform: translate(35%,-45%);
                 height: 20px;
@@ -222,10 +210,6 @@ body{
             
         }
         
-        // .icon-img{
-        //     border-color: $pcg;
-        //     background: $pcb;
-        // }
     }
     .cta-r{
         .icon-img{
@@ -243,9 +227,7 @@ body{
                 background-color: $pcw;
                 border-color: $pcw;
             }
-            // .link {
-            //     color: $pcr !important;
-            // }
+        
             .text-wrap{
                 &::before{
                     color: $pcr !important;
@@ -261,23 +243,74 @@ body{
         font-size: $v-title-fs1;
         font-family: $primary-font;
 
-        @include down(sm){
-            font-size: 26px;
+        // @include down(lg){
+        //     font-size: 35px;
+        // }
+        @include down(md){
+            font-size: 26px !important;
         }
+        @include down(xl){
+            font-size: 35px;
+        }
+    }
+    .v-subtitle-w{
+        font-size: $v-sub-title-fs1;
+        color: $pcw;
+        font-weight: $font-weight-light;
+        font-family: $primary-font;
+        line-height: 36px;
+
+        @include down(xl){
+            font-size: 22px;
+          }
     }
     .v-title-wwr{
         color: $pcw;
         font-size: $v-title-fs2;
         font-family: $primary-font;
-        @include down(sm){
+        line-height: 60px;
+        @include down(xl){
             font-size: 26px;
+            br{
+                display: none;
+            }
+        }
+    }
+    .v-title-wwr1{
+        font-size: $v1-title-fs1;
+        color: $pcw;
+        font-family: $primary-font;
+        line-height: 60px;
+        text-align: center;
+        @include down(xl){
+            font-size: 26px;
+            line-height: 40px;
         }
     }
     .tag-text{
         color: $pcg;
         font-size: $v-para-fs1;
         font-family: $primary-font;
+        line-height: 24px;
+        margin-bottom: 10px;
+    }
+    .tag-text-w{
+        color: $pcg;
+        font-size: $v-para-fs1;
+        font-family: $primary-font;
+        line-height: 28px;
+        margin-bottom: 10px;
+
     }
     .v-tagline-r{
         color: $pcr;
+    }
+    .s-title-text{
+        font-size: $v-para-fs1;
+        color: $pcw;
+    }
+    .s-text{
+        font-size: $v-para-fs2;
+        color: $pcg;
+        line-height: $v-sub-title-fs1;
     }
