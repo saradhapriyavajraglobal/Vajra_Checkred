@@ -6,7 +6,10 @@ jQuery(document).ready(function(){
       arrow: false,
       dots: false,
       autoplay:true,
-      autoplaySpeed:800,
+      autoplaySpeed:0,
+      speed: 4000,
+      cssEase: 'linear'
+
     });
     
     jQuery('.inte-carousel-rtl').slick({
@@ -16,8 +19,10 @@ jQuery(document).ready(function(){
       arrow: false,
       dots: false,
       autoplay:true,
-      autoplaySpeed:800,
+      autoplaySpeed:0,
+      speed: 4000,
       rtl: true,
+      cssEase: 'linear'
     });
   });
 
