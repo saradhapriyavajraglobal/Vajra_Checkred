@@ -15,16 +15,21 @@
                             <?php dynamic_sidebar('Footer-2'); ?>
 
 						</div>
-						<div class="col-lg-2 mx-auto col-12">
+						<div class="col-lg-2 mx-auto col-md-6">
 							
                             <?php dynamic_sidebar('Footer-3'); ?>
 
 						</div>   
-                        <div class="col-lg-2 mx-auto">
+                        <div class="col-lg-2 mx-auto col-md-6">
 							
                             <?php dynamic_sidebar('Footer-4'); ?>
 
-						</div>           
+						</div>      
+						<div class="col-lg-12 mx-auto col-md-6">
+							
+                            <?php dynamic_sidebar('Footer-4'); ?>
+
+						</div>       
 					</div>
 				</div>
 			</div>
