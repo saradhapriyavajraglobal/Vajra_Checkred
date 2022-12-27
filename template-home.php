@@ -212,11 +212,8 @@ endif;
                                                               <p><?php the_sub_field('description'); ?></p>
                                                           <?php endif; ?>
                                                       </div>
-                                                      <div class="col-lg-7">
-                                                          <?php if(get_sub_field('content_image')): ?>
-                                                              <img class="cont-img" src="<?php the_sub_field('content_image'); ?>" alt="">
-                                                          <?php endif; ?>
-                                                          
+                                                      <div class="col-lg-7 cont-img" style="background-image:url('<?php the_sub_field('content_image'); ?>')">
+                                                                                                       
                                                       </div>
                                                   </div>
                                               </div>
@@ -249,10 +246,8 @@ endif;
                                                               <p><?php the_sub_field('description'); ?></p>
                                                           <?php endif; ?>
                                                       </div>
-                                                      <div class="col-lg-7">
-                                                          <?php if(get_sub_field('content_image')): ?>
-                                                              <img class="cont-img" src="<?php the_sub_field('content_image'); ?>" alt="">
-                                                          <?php endif; ?>
+                                                      <div class="col-lg-7 cont-img" style="background-image:url('<?php the_sub_field('content_image'); ?>')">
+                                                 
                                                       </div>
                                                   </div>
                                               </div>

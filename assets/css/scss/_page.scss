@@ -213,23 +213,27 @@
          border-bottom: unset;
          .nav-item{
           padding-right: 20px;
+
+         @include down(lg) {
+            margin-right: 8px;
+            padding-right: unset;
+          }
          }
      }
  
      @media screen and (min-width: 767px) {
          .nav-tabs {
-             font-weight: 300;
-             font-size: 20px;
-             flex-flow: row wrap;
+          
              justify-content: center;
              list-style: none;
              margin: 0 auto;
              overflow: hidden;
              padding: 0;
              position: relative;
-             width: 75%;
+             width: 100%;
              display: flex;
- 
+             flex-wrap: wrap; 
+
              li{
                    -webkit-flex: 1;
                    flex: 1;
@@ -239,14 +243,20 @@
                  display: block;
                  margin: 0;
                  position: relative;
-                 padding: 10px 0;
+                 padding: 10px 12px;
                  text-align: center;
                  text-decoration: none; 
                  border-radius: 6px;
                  background-color: $scb;
                  font-size: 14px;
                  border: 1px solid $scg;
-
+                 @include down(xl){
+                  font-size: 12px;
+                }
+                  @include down(lg){
+                    font-size: 11px;
+                    padding: 10px 6px;
+                  }
                   
                    &.active {
                        border: 1px solid  $pcr;
@@ -277,7 +287,16 @@
          }
      }
      .cont-img{
-      width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 580px;
+        @include down(xl){
+          height: 400px;
+        }
+        @include down(md){
+          background-size: contain;
+          height: 230px;
+        }
      }
  
      @media screen and (max-width: 767px) {
@@ -333,13 +352,13 @@
               }
                
              }
-             .cont-img{
-                width:100%;
-              @include down(sm) { 
-                  width: 100%;
-             }
+          //   //  .cont-img{
+          //   //     width:100%;
+          //   //   @include down(sm) { 
+          //   //       width: 100%;
+          //   //  }
     
-          }
+          // }
          }
          
      }

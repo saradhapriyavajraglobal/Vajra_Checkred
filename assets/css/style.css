@@ -727,14 +727,15 @@ header .bg-header {
   padding-right: 20px;
 }
 
+@media (max-width: 991px) {
+  .checkred-works .responsive-tabs .nav-tabs .nav-item {
+    margin-right: 8px;
+    padding-right: unset;
+  }
+}
+
 @media screen and (min-width: 767px) {
   .checkred-works .responsive-tabs .nav-tabs {
-    font-weight: 300;
-    font-size: 20px;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -743,10 +744,12 @@ header .bg-header {
     overflow: hidden;
     padding: 0;
     position: relative;
-    width: 75%;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .checkred-works .responsive-tabs .nav-tabs li {
     -webkit-box-flex: 1;
@@ -758,7 +761,7 @@ header .bg-header {
     display: block;
     margin: 0;
     position: relative;
-    padding: 10px 0;
+    padding: 10px 12px;
     text-align: center;
     text-decoration: none;
     border-radius: 6px;
@@ -766,6 +769,22 @@ header .bg-header {
     font-size: 14px;
     border: 1px solid #8C929A;
   }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .checkred-works .responsive-tabs .nav-tabs li a {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 991px) {
+  .checkred-works .responsive-tabs .nav-tabs li a {
+    font-size: 11px;
+    padding: 10px 6px;
+  }
+}
+
+@media screen and (min-width: 767px) {
   .checkred-works .responsive-tabs .nav-tabs li a.active {
     border: 1px solid #AD3434;
     color: #FFFFFF;
@@ -787,7 +806,22 @@ header .bg-header {
 }
 
 .checkred-works .responsive-tabs .cont-img {
-  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 580px;
+}
+
+@media (max-width: 1199px) {
+  .checkred-works .responsive-tabs .cont-img {
+    height: 400px;
+  }
+}
+
+@media (max-width: 767px) {
+  .checkred-works .responsive-tabs .cont-img {
+    background-size: contain;
+    height: 230px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -839,15 +873,6 @@ header .bg-header {
   }
   .checkred-works .responsive-tabs .tab-pane.fade a.active {
     color: white;
-  }
-  .checkred-works .responsive-tabs .tab-pane.fade .cont-img {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 767px) and (max-width: 575px) {
-  .checkred-works .responsive-tabs .tab-pane.fade .cont-img {
-    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
