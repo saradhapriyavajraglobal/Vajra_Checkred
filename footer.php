@@ -24,15 +24,20 @@
 							
                             <?php dynamic_sidebar('Footer-4'); ?>
 
-						</div>      
-						<div class="col-lg-12 mx-auto col-md-6">
-							
-                            <?php dynamic_sidebar('Footer-4'); ?>
-
-						</div>       
+						</div>            
 					</div>
 				</div>
 			</div>
+			<div class="footer-bottom">
+					<div class="row">
+						<div class="col-md-5 mx-auto">
+						<p class="copy-right"><span>&copy; <?php echo date('Y'); ?> CheckRed All rights reserved</span></p>
+						</div>
+						<div class="col-md-5 mx-auto">
+							<?php dynamic_sidebar('Footer-Links'); ?>
+						</div>  
+					</div>                 
+				</div>
 		</div>
 	</div>
 </footer>

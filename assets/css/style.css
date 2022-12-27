@@ -5,8 +5,11 @@
 /* ---------- Border Radius ---------- */
 /* ---------- Screen size definitions ---------- */
 /* ---------- Animation speed ---------- */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
 footer {
   background: #000000;
+}
+footer .footer-top {
   padding: 80px 0;
 }
 footer .footer-top .block-7.widget_block {
@@ -51,12 +54,33 @@ footer .footer-top .block-11.widget_block ul:hover a {
   text-decoration: underline;
   color: #FFFFFF;
 }
-
-@font-face {
-  font-family: "Manrope", sans-serif;
-  src: url("/wp-content/themes/Vajra_Checkred/assets/fonts/Manrope-Regular.ttf");
-  font-weight: normal;
+footer .footer-bottom {
+  border-top: 1px solid #ABAFB4;
+  padding: 15px 0;
 }
+footer .footer-bottom .copy-right {
+  color: #ABAFB4;
+}
+footer .footer-bottom .block-12.widget_block {
+  text-align: right;
+}
+footer .footer-bottom .block-12.widget_block li {
+  font-size: 16px;
+  display: inline-block;
+  padding: 0 10px;
+  border-right: 1px solid #ABAFB4;
+}
+footer .footer-bottom .block-12.widget_block li:last-child {
+  border-right: unset;
+}
+footer .footer-bottom .block-12.widget_block li:hover a {
+  text-decoration: underline;
+  color: #FFFFFF;
+}
+footer .footer-bottom .block-12.widget_block li a {
+  color: #8C929A;
+}
+
 body {
   background-color: #000000;
 }
@@ -404,7 +428,7 @@ h1 {
 }
 
 .c-banner {
-  background-image: url("/wp-content/uploads/2022/12/Banner-scaled.webp");
+  background-image: url("/wp-content/uploads/2022/12/Banner-2-scaled.webp");
   background-size: cover;
   background-repeat: no-repeat;
   height: 500px;
