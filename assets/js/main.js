@@ -8,7 +8,16 @@ jQuery(document).ready(function(){
       autoplay:true,
       autoplaySpeed:0,
       speed: 4000,
-      cssEase: 'linear'
+      cssEase: 'linear',
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+          },
+        },
+      ],
 
     });
     
@@ -22,7 +31,16 @@ jQuery(document).ready(function(){
       autoplaySpeed:0,
       speed: 4000,
       rtl: true,
-      cssEase: 'linear'
+      cssEase: 'linear',
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+          },
+        },
+      ],
     });
   });
 
@@ -47,7 +65,7 @@ jQuery('.banner-slider').slick({
   fade:true,
   arrows: true,
   dots: false,
-  autoplay:true,
+  autoplay:false,
   speed:1000,
   autoplaySpeed:7000,
   cssEase: 'ease-in-out',
@@ -61,7 +79,7 @@ jQuery('.content-wrap').slick({
   fade:true,
   arrows: false,
   dots: false,
-  autoplay:true,
+  autoplay:false,
   speed:1000,
   autoplaySpeed:7000,
   cssEase: 'ease-in-out',

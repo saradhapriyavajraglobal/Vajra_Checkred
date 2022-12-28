@@ -1,8 +1,11 @@
 .integration-sec{
+  .v-title-wwr{
+    text-align: center;
+  }
   .integration{
     padding-top: 20px;
     text-align:center;
-  overflow-x: hidden;
+    overflow-x: hidden;
 
     .inte-carousel{
         width:100%;
@@ -64,6 +67,14 @@
 
     left: 63%;
 
+    @include down(md){
+
+      // right: 5% !important;
+      left: 40%;
+      transform: translate(-50%, -50%);
+
+    }
+
     &:before{
 
       content: '⏴︎' !important;
@@ -96,7 +107,9 @@
 
     @include down(md){
 
-      right: 5% !important;
+      // right: 5% !important;
+      right: 30%;
+      transform: translate(-50%, -50%);
 
     }
     @media(min-width:768px) and (max-width:992px){
@@ -158,6 +171,7 @@
 
     @include down(md){
       width: 90% !important;
+      display: none;
     }
     @include down(xl){
       width: 65%;
@@ -177,6 +191,7 @@
 
         width: 45%;
         right: 135px !important;
+        display: none;
 
       }
       @media(min-width:768px) and (max-width:992px){
@@ -208,6 +223,7 @@
     margin-bottom: 25px;
 
   }
+
   
 }
 .cloud-security{
@@ -505,6 +521,10 @@
   }
 
 }
+
+
+
+//Checkred section
 
 .checkred-works{
   .v-title-wwr{
