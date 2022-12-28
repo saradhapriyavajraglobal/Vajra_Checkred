@@ -241,9 +241,19 @@
 
     @include down(lg){
 
-      display: none;
+    position: unset;
+    margin-bottom: 10px;
+    width: 40%;
+    margin: 0 auto;
+    margin-bottom: 10px;
 
     }
+
+    @include down(md){
+
+      width: 85%;
+  
+      }
 
     .nav-item {
 
@@ -272,21 +282,28 @@
   .cloud-tab-content {
 
     .tab-content {
+    //   @include down(lg){
+
+    //   .tab-pane.fade{
+    //     display: block;
+    //     opacity: 1;
+    //   }
+    // }
 
       .card {
 
         background: $pcb;
         border: none;
 
+        .collapse {
+          display: block;
+          
+      }
+
         .card-header{
 
             display: none;
 
-          @include down(lg){
-
-            display: block;
-
-          }
         }
 
         .card-body{
@@ -466,6 +483,7 @@
 
     @include down(md){
       text-align: center;
+      padding: 5px 0px;
       
     }
 
@@ -473,6 +491,7 @@
   .v-title-wwr1{
 
     margin-bottom: 25px;
+    text-align: center;
 
   }
   .content-wrap-a{

@@ -78,6 +78,11 @@ footer{
         border-top: 1px solid $pcg;
         padding: 15px 0;
 
+        @include down(md){
+            overflow: hidden;
+            text-align: center;
+        }
+
         .copy-right{
             color: $pcg;
 
@@ -85,6 +90,10 @@ footer{
 
         .block-12.widget_block{
             text-align: right;
+
+            @include down(md){
+                text-align: center;
+            }
             li{
                 font-size: 16px;
                 display: inline-block;

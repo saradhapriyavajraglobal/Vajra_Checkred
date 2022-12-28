@@ -58,11 +58,22 @@ footer .footer-bottom {
   border-top: 1px solid #ABAFB4;
   padding: 15px 0;
 }
+@media (max-width: 767px) {
+  footer .footer-bottom {
+    overflow: hidden;
+    text-align: center;
+  }
+}
 footer .footer-bottom .copy-right {
   color: #ABAFB4;
 }
 footer .footer-bottom .block-12.widget_block {
   text-align: right;
+}
+@media (max-width: 767px) {
+  footer .footer-bottom .block-12.widget_block {
+    text-align: center;
+  }
 }
 footer .footer-bottom .block-12.widget_block li {
   font-size: 16px;
@@ -172,7 +183,7 @@ ul {
 .cta .text-wrap::after {
   position: absolute;
   content: "";
-  right: 0;
+  right: 1px;
   top: 0;
   width: 0.5px;
   height: 100%;
@@ -307,7 +318,6 @@ ul {
   color: #FFFFFF;
   font-family: "Manrope", sans-serif;
   line-height: 60px;
-  text-align: center;
 }
 @media (max-width: 1199px) {
   .v-title-wwr1 {
@@ -503,6 +513,11 @@ header .bg-header {
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 50px;
+}
+@media (max-width: 767px) {
+  .c-form .v-title-wwr1 {
+    text-align: center;
+  }
 }
 .c-form .contact-form {
   background-color: #0A0C11;
@@ -755,7 +770,16 @@ header .bg-header {
 }
 @media (max-width: 991px) {
   .cloud-tab-section .nav-tabs {
-    display: none;
+    position: unset;
+    margin-bottom: 10px;
+    width: 40%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .cloud-tab-section .nav-tabs {
+    width: 85%;
   }
 }
 .cloud-tab-section .nav-tabs .nav-item a {
@@ -777,13 +801,11 @@ header .bg-header {
   background: #000000;
   border: none;
 }
+.cloud-tab-section .cloud-tab-content .tab-content .card .collapse {
+  display: block;
+}
 .cloud-tab-section .cloud-tab-content .tab-content .card .card-header {
   display: none;
-}
-@media (max-width: 991px) {
-  .cloud-tab-section .cloud-tab-content .tab-content .card .card-header {
-    display: block;
-  }
 }
 .cloud-tab-section .cloud-tab-content .tab-content .card .card-body {
   padding: 50px 0;
@@ -924,10 +946,12 @@ header .bg-header {
 @media (max-width: 767px) {
   .c-approch .a-con {
     text-align: center;
+    padding: 5px 0px;
   }
 }
 .c-approch .v-title-wwr1 {
   margin-bottom: 25px;
+  text-align: center;
 }
 @media (max-width: 767px) {
   .c-approch .content-wrap-a br {

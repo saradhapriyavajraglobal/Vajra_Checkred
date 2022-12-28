@@ -121,7 +121,7 @@ body{
             &::after{
                 position: absolute;
                 content: '';
-                right: 0;
+                right: 1px;
                 top: 0;
                 width: 0.5px;
                 height: 100%;
@@ -285,7 +285,6 @@ body{
         color: $pcw;
         font-family: $primary-font;
         line-height: 60px;
-        text-align: center;
         @include down(xl){
             font-size: 26px;
             line-height: 40px;
