@@ -96,6 +96,9 @@ endif;
 endif;
 ?>
 
+
+<?php if( have_rows('cloud_platform_tab') ):
+  while ( have_rows('cloud_platform_tab') ) : the_row();?>
 <section class="cloud-tab-section">
 	<div class="container-fluid">
 		<?php if(get_sub_field('main_title')): ?>
@@ -159,137 +162,140 @@ endif;
 									<?php if(get_sub_field('tab_name')): ?>
 									<?php the_sub_field('tab_name'); ?>
 									<?php endif; ?></a>
-									</h4>
-								</div>
-							<div id="collapse-<?php echo $i; ?>" class="collapse show" data-bs-parent="#content" role="tabpanel" aria-labelledby="heading-<?php echo $i; ?>">
-								<div class="card-body">
-									<div class="row">
-										<div class="col-lg-6 col-md-12 me-auto align-self-center order-sm-12">
-											<?php if(get_sub_field('tab_image')): ?>
-											<img class="img-fluid tab-img" src="<?php the_sub_field('tab_image'); ?>" alt="">
-											<?php endif; ?>
-										</div>
-										<div class="col-lg-5 col-md-12 me-auto align-self-center order-sm-12 tab-content-wrap">
-											<?php if(get_sub_field('tab_title')): ?>
-											<h3 class="main-title v-subtitle-w"><?php the_sub_field('tab_title'); ?></h3>
-											<?php endif; ?>
-											<?php if(get_sub_field('description')): ?>
-											<P class="tag-text"><?php the_sub_field('description'); ?></P>
-											<?php endif; ?>
-											<?php if(get_sub_field('slider_title')): ?>
-											<P class="tag-text-w"><?php the_sub_field('slider_title'); ?></P>
-											<?php endif; ?>
+							</h4>
+						</div>
+						<div id="collapse-<?php echo $i; ?>" class="collapse show" data-bs-parent="#content" role="tabpanel" aria-labelledby="heading-<?php echo $i; ?>">
+							<div class="card-body">
+								<div class="row">
+									<div class="col-lg-6 col-md-12 me-auto align-self-center order-sm-12">
+										<?php if(get_sub_field('tab_image')): ?>
+										<img class="img-fluid tab-img" src="<?php the_sub_field('tab_image'); ?>" alt="">
+										<?php endif; ?>
+									</div>
+									<div class="col-lg-5 col-md-12 me-auto align-self-center order-sm-12 tab-content-wrap">
+										<?php if(get_sub_field('tab_title')): ?>
+										<h3 class="main-title v-subtitle-w"><?php the_sub_field('tab_title'); ?></h3>
+										<?php endif; ?>
+										<?php if(get_sub_field('description')): ?>
+										<P class="tag-text"><?php the_sub_field('description'); ?></P>
+										<?php endif; ?>
+										<?php if(get_sub_field('slider_title')): ?>
+										<P class="tag-text-w"><?php the_sub_field('slider_title'); ?></P>
+										<?php endif; ?>
 
-											<div class="img-slider">
-												<?php if( have_rows('image_slider') ):
+										<div class="img-slider">
+											<?php if( have_rows('image_slider') ):
 							   while ( have_rows('image_slider') ) : the_row();?>
-												<div class="img-slide">
-													<img src="<?php the_sub_field('slide_image'); ?>" class="slide-icon">
-												</div>
-												<?php
+											<div class="img-slide">
+												<img src="<?php the_sub_field('slide_image'); ?>" class="slide-icon">
+											</div>
+											<?php
 							   endwhile;
 							   else :
 							   endif;
-												?>
-											</div>
-											<?php if(get_sub_field('tab_cta_link')): ?>
-											<a  href="<?php the_sub_field('tab_cta_link'); ?>" class="cta cta-r">
-												<div data-hover="<?php the_sub_field('tab_cta'); ?>" class="text-wrap">
-													<div class="btn-link">
-														<span class="link"><?php the_sub_field('tab_cta'); ?></span>
-													</div> 
-												</div> 
-												<div class="icon-img">
-													<span>
-														<img src="/wp-content/uploads/2022/12/right-2.png" class="i-img">
-													</span>
-												</div>
-											</a>
-											<?php endif; ?>
+											?>
 										</div>
+										<?php if(get_sub_field('tab_cta_link')): ?>
+										<a  href="<?php the_sub_field('tab_cta_link'); ?>" class="cta cta-r">
+											<div data-hover="<?php the_sub_field('tab_cta'); ?>" class="text-wrap">
+												<div class="btn-link">
+													<span class="link"><?php the_sub_field('tab_cta'); ?></span>
+												</div> 
+											</div> 
+											<div class="icon-img">
+												<span>
+													<img src="/wp-content/uploads/2022/12/right-2.png" class="i-img">
+												</span>
+											</div>
+										</a>
+										<?php endif; ?>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<?php
+							  } 
+					else { ?>
+					<div class="card tab-pane fade" id="pane-<?php echo $i; ?>" role="tabpanel" aria-labelledby="tab<?php echo $i; ?>-tab">
+						<div class="card-header" role="tab" id="heading-<?php echo $i; ?>">
+							<h4 class="mb-0">
+								<a data-bs-toggle="collapse" href="#collapse-<?php echo $i; ?>" aria-expanded="true" aria-controls="collapse-<?php echo $i; ?>">
+									<?php if(get_sub_field('tab_name')): ?>
+									<?php the_sub_field('tab_name'); ?>
+									<?php endif; ?></a>
+							</h4>
+						</div>
+						<div id="collapse-<?php echo $i; ?>" class="collapse" data-bs-parent="#content" role="tabpanel" aria-labelledby="heading-<?php echo $i; ?>">
+							<div class="card-body">
+								<div class="row">
+									<div class="col-lg-6 col-md-12 me-auto align-self-center order-sm-12">
+										<?php if(get_sub_field('tab_image')): ?>
+										<img class="img-fluid tab-img" src="<?php the_sub_field('tab_image'); ?>" alt="">
+										<?php endif; ?>
+									</div>
+									<div class="col-lg-5 col-md-12 me-auto align-self-center order-sm-12 tab-content-wrap">
+										<?php if(get_sub_field('tab_title')): ?>
+										<h3 class="main-title v-subtitle-w"><?php the_sub_field('tab_title'); ?></h3>
+										<?php endif; ?>
+										<?php if(get_sub_field('description')): ?>
+										<P class="tag-text"><?php the_sub_field('description'); ?></P>
+										<?php endif; ?>
+										<?php if(get_sub_field('slider_title')): ?>
+										<P class="tag-text-w"><?php the_sub_field('slider_title'); ?></P>
+										<?php endif; ?>
+
+										<div class="img-slider">
+											<?php if( have_rows('image_slider') ):
+						  while ( have_rows('image_slider') ) : the_row();?>
+											<div class="img-slide">
+												<img src="<?php the_sub_field('slide_image'); ?>" class="slide-icon">
+											</div>
+											<?php
+						  endwhile;
+						  else :
+						  endif;
+											?>
+										</div>
+										<?php if(get_sub_field('tab_cta_link')): ?>
+										<a  href="<?php the_sub_field('tab_cta_link'); ?>" class="cta cta-r">
+											<div data-hover="<?php the_sub_field('tab_cta'); ?>" class="text-wrap">
+												<div class="btn-link">
+													<span class="link"><?php the_sub_field('tab_cta'); ?></span>
+												</div> 
+											</div> 
+											<div class="icon-img">
+												<span>
+													<img src="/wp-content/uploads/2022/12/right-2.png" class="i-img">
+												</span>
+											</div>
+										</a>
+										<?php endif; ?>
 									</div>
 								</div>
 							</div>
 						</div>
 						<?php
-							  } 
-					else { ?>
-						<div class="card tab-pane fade" id="pane-<?php echo $i; ?>" role="tabpanel" aria-labelledby="tab<?php echo $i; ?>-tab">
-							<div class="card-header" role="tab" id="heading-<?php echo $i; ?>">
-								<h4 class="mb-0">
-									<a data-bs-toggle="collapse" href="#collapse-<?php echo $i; ?>" aria-expanded="true" aria-controls="collapse-<?php echo $i; ?>">
-										<?php if(get_sub_field('tab_name')): ?>
-										<?php the_sub_field('tab_name'); ?>
-										<?php endif; ?></a>
-								</h4>
-							</div>
-							<div id="collapse-<?php echo $i; ?>" class="collapse" data-bs-parent="#content" role="tabpanel" aria-labelledby="heading-<?php echo $i; ?>">
-								<div class="card-body">
-									<div class="row">
-										<div class="col-lg-6 col-md-12 me-auto align-self-center order-sm-12">
-											<?php if(get_sub_field('tab_image')): ?>
-											<img class="img-fluid tab-img" src="<?php the_sub_field('tab_image'); ?>" alt="">
-											<?php endif; ?>
-										</div>
-										<div class="col-lg-5 col-md-12 me-auto align-self-center order-sm-12 tab-content-wrap">
-											<?php if(get_sub_field('tab_title')): ?>
-											<h3 class="main-title v-subtitle-w"><?php the_sub_field('tab_title'); ?></h3>
-											<?php endif; ?>
-											<?php if(get_sub_field('description')): ?>
-											<P class="tag-text"><?php the_sub_field('description'); ?></P>
-											<?php endif; ?>
-											<?php if(get_sub_field('slider_title')): ?>
-											<P class="tag-text-w"><?php the_sub_field('slider_title'); ?></P>
-											<?php endif; ?>
-
-											<div class="img-slider">
-												<?php if( have_rows('image_slider') ):
-						  while ( have_rows('image_slider') ) : the_row();?>
-												<div class="img-slide">
-													<img src="<?php the_sub_field('slide_image'); ?>" class="slide-icon">
-												</div>
-												<?php
-						  endwhile;
-						  else :
-						  endif;
-												?>
-											</div>
-											<?php if(get_sub_field('tab_cta_link')): ?>
-											<a  href="<?php the_sub_field('tab_cta_link'); ?>" class="cta cta-r">
-												<div data-hover="<?php the_sub_field('tab_cta'); ?>" class="text-wrap">
-													<div class="btn-link">
-														<span class="link"><?php the_sub_field('tab_cta'); ?></span>
-													</div> 
-												</div> 
-												<div class="icon-img">
-													<span>
-														<img src="/wp-content/uploads/2022/12/right-2.png" class="i-img">
-													</span>
-												</div>
-											</a>
-											<?php endif; ?>
-										</div>
-									</div>
-								</div>
-							</div>
-							<?php
 						 }
-							?>
+						?>
 
-							<?php $i++;
-							endwhile;
-							?>
-						</div>
+						<?php $i++;
+						endwhile;
+						?>
 					</div>
-
-					<?php  
-					endif; ?>
 				</div>
+
+				<?php  
+				endif; ?>
 			</div>
 		</div>
 	</div>
 </section>
-
+<?php
+  endwhile;
+  else :
+endif;
+?>
 
 <section class="checkred-works">
     <div class="container-fluid">
