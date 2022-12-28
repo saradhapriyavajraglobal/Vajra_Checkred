@@ -112,14 +112,14 @@ endif;
 				<ul class="nav nav-tabs" role="tablist">
 
 					<?php
-					$i=1;
+					$j=-1;
 					while( have_rows('cloud_tab_repeater') ): the_row();
 					?>
 
 					<?php
-					if($i==1) { ?>
+					if($j==-1) { ?>
 					<li class="nav-item">
-						<a id="tab<?php echo $i; ?>" href="#pane-<?php echo $i; ?>" class="nav-link active" data-bs-toggle="tab" role="tab">
+						<a id="tab<?php echo $j; ?>" href="#pane-<?php echo $j; ?>" class="nav-link active" data-bs-toggle="tab" role="tab">
 							<?php if(get_sub_field('tab_name')): ?>
 							<?php the_sub_field('tab_name'); ?>
 							<?php endif; ?>
@@ -130,7 +130,7 @@ endif;
 
 					else { ?>
 					<li class="nav-item">
-						<a id="tab<?php echo $i; ?>" href="#pane-<?php echo $i; ?>" class="nav-link" data-bs-toggle="tab" role="tab">
+						<a id="tab<?php echo $j; ?>" href="#pane-<?php echo $j; ?>" class="nav-link" data-bs-toggle="tab" role="tab">
 							<?php if(get_sub_field('tab_name')): ?>
 							<?php the_sub_field('tab_name'); ?>
 							<?php endif; ?>
@@ -139,7 +139,7 @@ endif;
 					<?php
 						 }
 					?>
-					<?php $i++;
+					<?php $j++;
 					endwhile;
 					?>
 				</ul>
@@ -150,21 +150,21 @@ endif;
 				<div id="content" class="tab-content" role="tablist">
 
 					<?php
-					$i=1;
+					$j=-1;
 					while( have_rows('cloud_tab_repeater') ): the_row();
 					?>
 					<?php
-					if($i==1) { ?>
-					<div class="card tab-pane fade show active" id="pane-<?php echo $i; ?>" role="tabpanel" aria-labelledby="tab<?php echo $i; ?>-tab">
-						<div class="card-header" role="tab" id="heading-<?php echo $i; ?>">
+					if($j==-1) { ?>
+					<div class="card tab-pane fade show active" id="pane-<?php echo $j; ?>" role="tabpanel" aria-labelledby="tab<?php echo $j; ?>-tab">
+						<div class="card-header" role="tab" id="heading-<?php echo $j; ?>">
 							<h4 class="mb-0">
-								<a data-bs-toggle="collapse" href="#collapse-<?php echo $i; ?>" aria-expanded="true" aria-controls="collapse-<?php echo $i; ?>">
+								<a data-bs-toggle="collapse" href="#collapse-<?php echo $j; ?>" aria-expanded="true" aria-controls="collapse-<?php echo $j; ?>">
 									<?php if(get_sub_field('tab_name')): ?>
 									<?php the_sub_field('tab_name'); ?>
 									<?php endif; ?></a>
 							</h4>
 						</div>
-						<div id="collapse-<?php echo $i; ?>" class="collapse show" data-bs-parent="#content" role="tabpanel" aria-labelledby="heading-<?php echo $i; ?>">
+						<div id="collapse-<?php echo $j; ?>" class="collapse show" data-bs-parent="#content" role="tabpanel" aria-labelledby="heading-<?php echo $j; ?>">
 							<div class="card-body">
 								<div class="row">
 									<div class="col-lg-6 col-md-12 me-auto align-self-center order-sm-12">
@@ -217,16 +217,16 @@ endif;
 					<?php
 							  } 
 					else { ?>
-					<div class="card tab-pane fade" id="pane-<?php echo $i; ?>" role="tabpanel" aria-labelledby="tab<?php echo $i; ?>-tab">
-						<div class="card-header" role="tab" id="heading-<?php echo $i; ?>">
+					<div class="card tab-pane fade" id="pane-<?php echo $j; ?>" role="tabpanel" aria-labelledby="tab<?php echo $j; ?>-tab">
+						<div class="card-header" role="tab" id="heading-<?php echo $j; ?>">
 							<h4 class="mb-0">
-								<a data-bs-toggle="collapse" href="#collapse-<?php echo $i; ?>" aria-expanded="true" aria-controls="collapse-<?php echo $i; ?>">
+								<a data-bs-toggle="collapse" href="#collapse-<?php echo $j; ?>" aria-expanded="true" aria-controls="collapse-<?php echo $j; ?>">
 									<?php if(get_sub_field('tab_name')): ?>
 									<?php the_sub_field('tab_name'); ?>
 									<?php endif; ?></a>
 							</h4>
 						</div>
-						<div id="collapse-<?php echo $i; ?>" class="collapse" data-bs-parent="#content" role="tabpanel" aria-labelledby="heading-<?php echo $i; ?>">
+						<div id="collapse-<?php echo $j; ?>" class="collapse" data-bs-parent="#content" role="tabpanel" aria-labelledby="heading-<?php echo $j; ?>">
 							<div class="card-body">
 								<div class="row">
 									<div class="col-lg-6 col-md-12 me-auto align-self-center order-sm-12">
@@ -279,7 +279,7 @@ endif;
 						 }
 						?>
 
-						<?php $i++;
+						<?php $j++;
 						endwhile;
 						?>
 					</div>

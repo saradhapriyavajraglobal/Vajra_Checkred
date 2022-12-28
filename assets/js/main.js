@@ -142,3 +142,24 @@ $slickElement.on('init reInit afterChange', function (event, slick, currentSlide
       jQuery(this).prev(".card-header").removeClass("active");
     });
   });
+
+
+
+  // jQuery('.img-slider').slick({
+  //   infinite: false,
+  //   slidesToShow: 4,
+  //   slidesToScroll: 1,
+  //   arrows: false,
+  //   dots: false,
+  //   autoplay:true,
+  //   responsive: [
+  //     {
+  //       breakpoint: 767,
+  //       settings: {
+  //         slidesToShow: 2,
+  //         slidesToScroll: 1,
+  //       },
+  //     },
+  //   ],
+
+  // });

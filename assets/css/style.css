@@ -874,9 +874,6 @@ header .bg-header {
 @media (max-width: 991px) {
   .cloud-tab-section .cloud-tab-content .tab-content .card .card-body .tab-content-wrap .img-slider {
     margin: 0 auto;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
     margin-bottom: 30px;
   }
 }
@@ -912,7 +909,7 @@ header .bg-header {
     width: 80px;
   }
 }
-.cloud-tab-section .cloud-tab-content .tab-content .card .card-body .tab-content-wrap .img-slider .img-slide:last-child {
+.cloud-tab-section .cloud-tab-content .tab-content .card .card-body .tab-content-wrap .img-slider .img-slide:nth-child(4n) {
   border-right: unset;
 }
 
