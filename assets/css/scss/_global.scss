@@ -269,10 +269,8 @@ body{
         color: $pcw;
         font-size: $v-title-fs2;
         font-family: $primary-font;
-        line-height: 60px;
         @include down(xl){
             font-size: 35px;
-            line-height: 50px;
         }
         @include down(lg){
             font-size: 26px;
@@ -285,7 +283,6 @@ body{
         font-size: $v1-title-fs1;
         color: $pcw;
         font-family: $primary-font;
-        line-height: 60px;
         @include down(xl){
             font-size: 26px;
             line-height: 40px;
@@ -317,4 +314,33 @@ body{
         font-size: $v-para-fs2;
         color: $pcg;
         line-height: $v-sub-title-fs1;
+    }
+    .v-title-lh1{
+        line-height: 60px;
+
+        @include down(xl){
+            line-height: 40px;
+        }
+        @include down(md){
+            line-height: 35px !important;
+        }
+    }
+    .v-title-lh2{
+        line-height: 50px;
+
+        @include down(xl){
+            line-height: 40px;
+        }
+        @include down(md){
+            line-height: 35px !important;
+        }
+    }
+    .v-para-lh1{
+        line-height: 28px;
+        @include down(md){
+            line-height: 24px !important;
+        }
+    }
+    .v-para-lh2{
+        line-height: 24px;
     }
