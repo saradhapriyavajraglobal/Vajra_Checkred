@@ -20,8 +20,8 @@
               <?php if( have_rows('banner_slider') ):
                 while ( have_rows('banner_slider') ) : the_row();?>
                   <div class="left-slider">
-                    <h1 class="v-title-w"><?php the_sub_field('banner_title');?></h1>
-                    <p class="tag-text"><?php the_sub_field('banner_tagline');?></p>
+                    <p class="v-title-w v-title-lh1"><?php the_sub_field('banner_title');?></p>
+                    <p class="tag-text v-para-lh2"><?php the_sub_field('banner_tagline');?></p>
                     <a  href="<?php the_sub_field('cta_link');?>" class="cta cta-r">
                       <div data-hover="<?php the_sub_field('banner_cta');?>" class="text-wrap">
                         <div class="btn-link">
@@ -82,8 +82,8 @@ endif;
                 </div>
               </div>
               <div class="col-lg-6 align-self-center">
-                <h1 class="v-title-wwr"><?php the_sub_field('title');?></h1>
-                <p class="tag-text c-des"><?php the_sub_field('description');?></p>
+                <h1 class="v-title-wwr v-title-lh2"><?php the_sub_field('title');?></h1>
+                <p class="tag-text c-des v-para-lh1"><?php the_sub_field('description');?></p>
               </div>
             </div>
           </div>
@@ -416,8 +416,8 @@ endif;
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-5 mx-auto align-self-center">
-            <h2 class="v-title-wwr"><?php the_sub_field('title');?></h2>
-            <p class="tag-text c-des"><?php the_sub_field('description');?></p>
+            <h2 class="v-title-wwr v-title-lh2"><?php the_sub_field('title');?></h2>
+            <p class="tag-text c-des v-para-lh1"><?php the_sub_field('description');?></p>
           </div>
           <div class="col-lg-6 pe-0 align-self-center">
             <div class="img-container">
@@ -443,7 +443,7 @@ endif;
       <div class="col-lg-9 mx-auto">
        
         <div class="row">
-        <h3 class="v-title-wwr1"><?php the_sub_field('a-sec-title');?></h3>
+        <h3 class="v-title-wwr1 v-title-lh1"><?php the_sub_field('a-sec-title');?></h3>
           <div class="col-lg-4 col-md-4">
             <div class="a-con content-wrapper">
               <h4 class="s-title-text"><?php the_sub_field('title-1');?></h4>

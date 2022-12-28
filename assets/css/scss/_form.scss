@@ -32,7 +32,7 @@
             background-color: $pcb;
             border: 1px solid $scg;
             border-radius: 10px;
-            padding: 15px;
+            padding: 15px 20px 15px;
             margin: 10px 0px;
             color: $pcg;
 
@@ -40,6 +40,10 @@
 
                 outline: unset;
 
+            }
+            &::placeholder{
+                font-size: $v-para-fs2;
+                color: $pcg;
             }
         }
 
@@ -66,12 +70,17 @@
 
             }
         }
+       
         .wpcf7-acceptance{
 
             .wpcf7-list-item-label{
 
                 color: $pcg;
+                font-size: $v-para-fs2;
 
+            }
+            .wpcf7-list-item{
+                margin-top: 13px;
             }
 
         }
@@ -89,6 +98,8 @@
                 border: $pcr;
                 color: $pcw;
                 transition: 0.7s;
+
+                
 
             }
         }

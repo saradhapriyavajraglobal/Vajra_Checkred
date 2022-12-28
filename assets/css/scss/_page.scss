@@ -55,8 +55,10 @@
       height: 475px;
       object-fit: cover;
 
-      @include down(md){
+      @include down(lg){
         height: unset;
+        width: 90% !important;
+        
       }
 
     }
@@ -223,12 +225,24 @@
     margin-bottom: 25px;
 
   }
+  .ch-img {
+    @include down(lg){
+        width: 90% !important;
+    }
+  }
 
   
 }
 .cloud-security{
 
   padding: 30px 0px;
+
+  .v-title-wwr{
+
+    margin-bottom: 25px;
+
+  }
+
 
 }
 
