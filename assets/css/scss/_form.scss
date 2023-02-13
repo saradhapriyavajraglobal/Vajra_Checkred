@@ -15,10 +15,15 @@
 
     .contact-form{
 
-        background-color: $scb;
         border-radius: 15px;
-        border: 1px solid $scg;
         padding: 50px;
+        backdrop-filter: blur(15px) saturate(131%);
+        -webkit-backdrop-filter: blur(16px) saturate(180%);
+        background-color: rgb(49 48 48 / 24%);
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.125);
+
+        
 
        
         @include down(sm){
@@ -31,7 +36,7 @@
 
             width: 100%;
             background-color: $pcb;
-            border: 1px solid $scg;
+            border: 1px solid rgba(255, 255, 255, 0.125);
             border-radius: 10px;
             padding: 15px 20px 15px;
             margin: 10px 0px;
@@ -40,6 +45,7 @@
             &:focus{
 
                 outline: unset;
+                border: 1px solid $pcr;
 
             }
             &::placeholder{
@@ -59,6 +65,12 @@
             background: $pcb;
             margin: 0px 10px 0px 0px;
             vertical-align: text-bottom;
+            border-radius: 2px;
+            &:checked{
+
+                border: 1px solid $pcr;
+
+            }
 
             &:checked:after {
 
@@ -67,8 +79,8 @@
                 position: absolute;
                 top: 1px;
                 left: 19px;
-                color: #fff;
-
+                color: $pcw;
+              
             }
         }
        

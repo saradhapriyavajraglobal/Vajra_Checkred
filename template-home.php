@@ -98,8 +98,8 @@ endif;
 
 
 <?php if( have_rows('cloud_platform_tab') ):
-  while ( have_rows('cloud_platform_tab') ) : the_row();?>
-<section class="cloud-tab-section">
+while ( have_rows('cloud_platform_tab') ) : the_row();?>
+<section class="cloud-tab-section section-pad">
 	<div class="container-fluid">
 		<?php if(get_sub_field('main_title')): ?>
 		<h3 class="text-center main-tagline v-title-wwr"><?php the_sub_field('main_title'); ?></h3>
@@ -126,7 +126,7 @@ endif;
 						</a>
 					</li>
 					<?php
-							  } 
+							   } 
 
 					else { ?>
 					<li class="nav-item">
@@ -185,14 +185,14 @@ endif;
 
 										<div class="img-slider">
 											<?php if( have_rows('image_slider') ):
-							   while ( have_rows('image_slider') ) : the_row();?>
+								while ( have_rows('image_slider') ) : the_row();?>
 											<div class="img-slide">
 												<img src="<?php the_sub_field('slide_image'); ?>" class="slide-icon">
 											</div>
 											<?php
-							   endwhile;
-							   else :
-							   endif;
+								endwhile;
+								else :
+								endif;
 											?>
 										</div>
 										<?php if(get_sub_field('tab_cta_link')): ?>
@@ -215,7 +215,7 @@ endif;
 						</div>
 					</div>
 					<?php
-							  } 
+							   } 
 					else { ?>
 					<div class="card tab-pane fade" id="pane-<?php echo $j; ?>" role="tabpanel" aria-labelledby="tab<?php echo $j; ?>-tab">
 						<div class="card-header" role="tab" id="heading-<?php echo $j; ?>">
@@ -292,156 +292,154 @@ endif;
 	</div>
 </section>
 <?php
-  endwhile;
-  else :
+endwhile;
+else :
 endif;
 ?>
 
-<section class="checkred-works">
-    <div class="container-fluid">
-      <div class="row">
-         <div class="col-lg-11 mx-auto">
-                  <?php if(get_field('checkred_title')): ?>
-                     <h2 class="v-title-wwr"><?php the_field('checkred_title'); ?></h2>
-                  <?php endif; ?>
-              <?php if( have_rows('checkred_works') ): ?>
-    
-              <div class="responsive-tabs">
+<section class="checkred-works section-pad">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-11 mx-auto">
+				<?php if(get_field('checkred_title')): ?>
+				<h2 class="v-title-wwr"><?php the_field('checkred_title'); ?></h2>
+				<?php endif; ?>
+				<?php if( have_rows('checkred_works') ): ?>
 
-                        <div class="work-titles">
-                          <ul class="nav nav-tabs" role="tablist">
-                              
-                              <?php
-                                  $i=1;
-                                  while( have_rows('checkred_works') ): the_row();
-                                  ?>
+				<div class="responsive-tabs">
 
-                                    <?php
-                                        if($i==1) { ?>
-                                          <li class="nav-item">
-                                          <a id="tab-<?php echo $i; ?>" href="#pane-<?php echo $i; ?>" class="nav-link active" data-bs-toggle="tab" role="tab">
-                                          <?php if(get_sub_field('work_titles')): ?>
-                                          <?php the_sub_field('work_titles'); ?>
-                                          <?php endif; ?>
-                                          </a>
-                                          </li>
-                                      <?php
-                                    } 
-                                
-                                    else { ?>
-                                      <li class="nav-item">
-                                      <a id="tab-<?php echo $i; ?>" href="#pane-<?php echo $i; ?>" class="nav-link" data-bs-toggle="tab" role="tab">
-                                          <?php if(get_sub_field('work_titles')): ?>
-                                          <?php the_sub_field('work_titles'); ?>
-                                          <?php endif; ?>
-                                      </a>
-                                      </li>
-                                      <?php
-                                      }
-                                  ?>
-                            <?php $i++;
-                            endwhile;
-                            ?>
-                          </ul>
+					<div class="work-titles">
+						<ul class="nav nav-tabs" role="tablist">
 
-                        </div>  
+							<?php
+							$i=1;
+							while( have_rows('checkred_works') ): the_row();
+							?>
 
-                          <div id="content" class="tab-content" role="tablist">
-                          
-                              <?php
-                                  $i=1;
-                                  while( have_rows('checkred_works') ): the_row();
-                              ?>
-                              <?php
-                                if($i==1) { ?>
-                                  <div id="pane-<?php echo $i; ?>" class="card tab-pane fade show active" role="tabpanel" aria-labelledby="tab-<?php echo $i; ?>">
-                                      <div class="card-header" role="tab" id="heading-<?php echo $i; ?>">
-                                          <h5 class="mb-0">
-                                              <a data-bs-toggle="collapse" href="#collapse-<?php echo $i; ?>" aria-expanded="true" aria-controls="collapse-<?php echo $i; ?>">
-                                                  <?php if(get_sub_field('work_titles')): ?>
-                                                  <?php the_sub_field('work_titles'); ?>
-                                                  <?php endif; ?>
-                                              </a>
-                                          </h5>
-                                      </div>
-                                      <div id="collapse-<?php echo $i; ?>" class="collapse show" data-bs-parent="#content" role="tabpanel"
-                                          aria-labelledby="heading-<?php echo $i; ?>">
-                                          <div class="card-body">
-                                              <div class="container">
-                                                  <div class="row">
-                                                      <div class="col-lg-5 align-self-center">
-                                                          <?php if(get_sub_field('content_title')): ?>
-                                                              <h3><?php the_sub_field('content_title'); ?></h3>
-                                                          <?php endif; ?>
-                                                          <?php if(get_sub_field('description')): ?>
-                                                              <p><?php the_sub_field('description'); ?></p>
-                                                          <?php endif; ?>
-                                                      </div>
-                                                      <div class="col-lg-7 cont-img" style="background-image:url('<?php the_sub_field('content_image'); ?>')">
-                                                                                                       
-                                                      </div>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <?php
-                                    } 
-                              else { ?>
-                              <div id="pane-<?php echo $i; ?>" class="card tab-pane fade" role="tabpanel" aria-labelledby="tab-<?php echo $i; ?>">
-                                  <div class="card-header" role="tab" id="heading-<?php echo $i; ?>">
-                                      <h5 class="mb-0">
-                                          <a class="collapsed" data-bs-toggle="collapse" href="#collapse-<?php echo $i; ?>" aria-expanded="false"
-                                              aria-controls="collapse-<?php echo $i; ?>">
-                                              <?php if(get_sub_field('work_titles')): ?>
-                                              <?php the_sub_field('work_titles'); ?>
-                                              <?php endif; ?>
-                                          </a>
-                                      </h5>
-                                  </div>
-                                  <div id="collapse-<?php echo $i; ?>" class="collapse" data-bs-parent="#content" role="tabpanel" aria-labelledby="heading-<?php echo $i; ?>">
-                                      <div class="card-body">
-                                              <div class="container">
-                                                  <div class="row">
-                                                      <div class="col-lg-5 align-self-center">
-                                                          <?php if(get_sub_field('content_title')): ?>
-                                                              <h3><?php the_sub_field('content_title'); ?></h3>
-                                                          <?php endif; ?>
-                                                          <?php if(get_sub_field('description')): ?>
-                                                              <p><?php the_sub_field('description'); ?></p>
-                                                          <?php endif; ?>
-                                                      </div>
-                                                      <div class="col-lg-7 cont-img" style="background-image:url('<?php the_sub_field('content_image'); ?>')">
-                                                 
-                                                      </div>
-                                                  </div>
-                                              </div>
-                                      </div>
-                                  </div>
-                              </div>
-                              <?php
-                              }
-                              ?>
-                              
-                              <?php $i++;
-                              endwhile;
-                              ?>
-                        
-                          </div>
-                     </div>
-                  <?php  
-                  endif; ?>
+							<?php
+							if($i==1) { ?>
+							<li class="nav-item">
+								<a id="tab-<?php echo $i; ?>" href="#pane-<?php echo $i; ?>" class="nav-link active" data-bs-toggle="tab" role="tab">
+									<?php if(get_sub_field('work_titles')): ?>
+									<?php the_sub_field('work_titles'); ?>
+									<?php endif; ?>
+								</a>
+							</li>
+							<?php
+									  } 
 
-                  </div>
-                </div>
+							else { ?>
+							<li class="nav-item">
+								<a id="tab-<?php echo $i; ?>" href="#pane-<?php echo $i; ?>" class="nav-link" data-bs-toggle="tab" role="tab">
+									<?php if(get_sub_field('work_titles')): ?>
+									<?php the_sub_field('work_titles'); ?>
+									<?php endif; ?>
+								</a>
+							</li>
+							<?php
+								 }
+							?>
+							<?php $i++;
+							endwhile;
+							?>
+						</ul>
 
-       
-    </div>
+					</div>  
+
+					<div id="content" class="tab-content" role="tablist">
+
+						<?php
+						$i=1;
+						while( have_rows('checkred_works') ): the_row();
+						?>
+						<?php
+						if($i==1) { ?>
+						<div id="pane-<?php echo $i; ?>" class="card tab-pane fade show active" role="tabpanel" aria-labelledby="tab-<?php echo $i; ?>">
+							<div class="card-header" role="tab" id="heading-<?php echo $i; ?>">
+								<h5 class="mb-0">
+									<a data-bs-toggle="collapse" href="#collapse-<?php echo $i; ?>" aria-expanded="true" aria-controls="collapse-<?php echo $i; ?>">
+										<?php if(get_sub_field('work_titles')): ?>
+										<?php the_sub_field('work_titles'); ?>
+										<?php endif; ?>
+									</a>
+								</h5>
+							</div>
+							<div id="collapse-<?php echo $i; ?>" class="collapse show" data-bs-parent="#content" role="tabpanel"
+								 aria-labelledby="heading-<?php echo $i; ?>">
+								<div class="card-body">
+									<div class="container">
+										<div class="row">
+											<div class="col-lg-5 align-self-center">
+												<?php if(get_sub_field('content_title')): ?>
+												<h3><?php the_sub_field('content_title'); ?></h3>
+												<?php endif; ?>
+												<?php if(get_sub_field('description')): ?>
+												<p><?php the_sub_field('description'); ?></p>
+												<?php endif; ?>
+											</div>
+											<div class="col-lg-7 cont-img" style="background-image:url('<?php the_sub_field('content_image'); ?>')">
+
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<?php
+								  } 
+						else { ?>
+						<div id="pane-<?php echo $i; ?>" class="card tab-pane fade" role="tabpanel" aria-labelledby="tab-<?php echo $i; ?>">
+							<div class="card-header" role="tab" id="heading-<?php echo $i; ?>">
+								<h5 class="mb-0">
+									<a class="collapsed" data-bs-toggle="collapse" href="#collapse-<?php echo $i; ?>" aria-expanded="false"
+									   aria-controls="collapse-<?php echo $i; ?>">
+										<?php if(get_sub_field('work_titles')): ?>
+										<?php the_sub_field('work_titles'); ?>
+										<?php endif; ?>
+									</a>
+								</h5>
+							</div>
+							<div id="collapse-<?php echo $i; ?>" class="collapse" data-bs-parent="#content" role="tabpanel" aria-labelledby="heading-<?php echo $i; ?>">
+								<div class="card-body">
+									<div class="container">
+										<div class="row">
+											<div class="col-lg-5 align-self-center">
+												<?php if(get_sub_field('content_title')): ?>
+												<h3><?php the_sub_field('content_title'); ?></h3>
+												<?php endif; ?>
+												<?php if(get_sub_field('description')): ?>
+												<p><?php the_sub_field('description'); ?></p>
+												<?php endif; ?>
+											</div>
+											<div class="col-lg-7 cont-img" style="background-image:url('<?php the_sub_field('content_image'); ?>')">
+
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<?php
+							 }
+						?>
+
+						<?php $i++;
+						endwhile;
+						?>
+
+					</div>
+				</div>
+				<?php  
+				endif; ?>
+
+			</div>
+		</div>
+	</div>
 </section>
 
 <?php if( have_rows('integration_logo') ):
   while ( have_rows('integration_logo') ) : the_row();?>
-<section class="integration-sec">
+<section class="integration-sec section-pad">
     <div class="container-fluid">
           <?php if(get_sub_field('logo_title')): ?>
               <h2 class="v-title-wwr"><?php the_sub_field('logo_title'); ?></h2>
@@ -495,7 +493,7 @@ endif;
 
 <?php if( have_rows('client_cloud') ):
   while ( have_rows('client_cloud') ) : the_row();?>
-    <section class="cloud-security">
+    <section class="cloud-security section-pad">
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-5 mx-auto align-self-center">
@@ -520,14 +518,14 @@ endif;
 
 <?php if( have_rows('approach_wrap') ):
   while ( have_rows('approach_wrap') ) : the_row();?>
-<section class="c-approch">
+<section class="c-approch section-pad">
   <div class="container-fluid">
     <div class="row">
       <div class="col-lg-9 mx-auto">
        
         <div class="row">
         <h3 class="v-title-wwr1 v-title-lh1"><?php the_sub_field('a-sec-title');?></h3>
-          <div class="col-lg-4 col-md-4">
+          <div class="col-lg-3 col-md-4 ms-auto">
             <div class="a-con content-wrapper">
               <h4 class="s-title-text"><?php the_sub_field('title-1');?></h4>
               <p class="s-text"><?php the_sub_field('desc-1');?></p>
@@ -537,10 +535,12 @@ endif;
               <p class="s-text"><?php the_sub_field('desc-2');?></p>
             </div>
           </div>
-          <div class="col-lg-4 col-md-4">
-           
+          <div class="col-lg-4 col-md-4 video-wrap">
+              <video autoplay="" muted="" loop="" playsinline="" class="bannet-video">
+                  <source src="http://checkred.local/wp-content/uploads/2022/12/Infographic.mp4" type="video/mp4">                        
+              </video>
           </div>
-          <div class="col-lg-4 col-md-4">
+          <div class="col-lg-3 col-md-4 me-auto">
            <div class="a-con content-wrapper-s">
               <h4 class="s-title-text"><?php the_sub_field('title-3');?></h4>
               <p class="s-text"><?php the_sub_field('desc-3');?></p>
@@ -565,7 +565,7 @@ endif;
 endif;
 ?>
 
-<section class="c-form">
+<section class="c-form section-pad">
   <div class="container-fluid">
     <div class="row">
       <div class="col-lg-11 mx-auto">

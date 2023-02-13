@@ -139,6 +139,7 @@ function excerpt($limit) {
 	return $excerpt;
 }
 
+
  // Add custom validation for CF7 form fields
 function is_company_email($email){ // Check against list of common public email providers & return true if the email provided *doesn't* match one of them
 if(

@@ -5,6 +5,7 @@ header {
 	top: 0;
 	left: 0;
 	z-index: 9999;
+	border-bottom: 0.5px solid #abafb457;
 
 
 
@@ -16,35 +17,7 @@ header {
         .head-wrap { 
 			display: flex;
 
-			.nav-toggler {
-				background-image: url(/wp-content/uploads/2022/12/menu-4.png);
-				display: none;
-				background-repeat: no-repeat;
-				background-size: 90%;
-				background-position: 50%;
-				width: 35px;
-				height: 35px;
-				background-color: transparent;
-				border: none;
-
-				@include down(xl){
-					display: block;
-					float: right;
-					align-self: center;
-				}
-
-				@include down(md){
-					width: 30px;
-					height: auto;
-				}
-				
-			}
-
-			.toggler-open {
-				background-image: url(/wp-content/uploads/2022/12/close-1.png) !important;
-				background-size: 60% !important;
-				background-repeat: no-repeat;
-			}
+			
 
             .head-logo{
 
@@ -63,7 +36,17 @@ header {
 				text-align: center;
 				align-self: center;
 
-				#menu-primary-navigation{
+				@include down(xl){
+					width: 100%;
+				}
+				
+				#mega-menu-wrap-primary_navigation{
+
+					.mega-menu-toggle{
+						background: transparent;
+					}
+
+				#mega-menu-primary_navigation{
 
 					list-style: none;
 					margin: 0;
@@ -71,29 +54,166 @@ header {
 					text-align: center;
 
 					@include down(xl){
-						
+						background: rgb(0 0 0);
 						position: absolute;
 						width: 100%;
-						height: calc(100vh - 60px);
-						left: 0;
-						top: 100px;
-						flex-direction: column;
-						align-items: center;
-						background-color: $pcb;
-						max-height: 0;
-						overflow: hidden;
-						transition: 0.3s;
+						z-index: 9999999;
+						margin-top: 30px;
+					}
 
-						&.open{
-							max-height: 100vh;
-							overflow: hidden;
-							border-top: 1px solid $scg;
+					
+	
+					#mega-menu-item-11{
+						.mega-sub-menu{
+							width: 360px;
+							left: -115px;
+
+							@include down(xl){
+								width: 100%;
+							}
+
 						}
 					}
-	
-					>li{
 
-						margin: 0 30px;
+					#mega-menu-item-12{
+						ul{
+							padding: 0;
+							overflow: hidden;
+
+							li{
+								padding: 0;
+								&:hover{
+									a{
+										background: none;
+										text-decoration: none;
+									}
+								}
+							}
+						}
+						.mega-menu-item-custom_html-2{
+							position:static;
+							.head-tab{
+								
+								.li-head{
+									width: 35%;
+									padding: 20px 25px!important;
+									box-shadow: 4px 0px 0px rgb(0 0 0 / 2%);
+
+									&:hover{
+
+										.h-link{
+										border-radius: 5px;
+										background: #8C929A21;
+										color: $pcr;
+									
+										}
+
+										a{
+										color: $pcr;
+									}
+
+										.pf-submenu{
+
+											li{
+													a{
+														color: unset!important;
+													}
+												
+											}
+										}
+
+										
+									}
+									.h-link{
+										background: $pcw;
+										color: $pcb;
+										font-family: $primary-font;
+										font-weight: 500;
+										padding: 10px 20px;
+										line-height: 20px;
+										
+									}
+
+									
+									&:hover{
+										
+										.pf-submenu{
+											li{
+												a{
+													text-decoration: none;
+												}
+											}
+										}
+									}
+
+									.pf-submenu{
+
+										li{
+											&:hover{
+												a{
+													text-decoration: underline;
+													color: $pcr!important;
+												}
+											}
+										}
+									}
+
+								}
+								
+
+									li{
+										width:100%;
+										padding: 15px 40px!important;
+								
+										ul{
+											display: none;
+											position: absolute;
+											top: 0;
+											left: 35%;
+											width: 70%;
+											height: 100%;
+											-moz-column-count: 2;
+											column-count: 2;
+											overflow: hidden;
+										  }
+
+										  &.show{
+											ul{
+												background: #8C929A21;
+												display: block;
+											}
+										  }
+										  
+									  }
+
+									  li{
+										padding: 5px;
+		
+										&:hover{
+		
+											a{
+											text-decoration: none;
+											color: $pcr;
+										
+											}
+										}
+										a{
+											background: #ffffff00;
+											color: $pcb;
+											font-family: $primary-font;
+											font-weight: 500;
+											padding: 0;
+											line-height: 20px;
+											
+										}
+									}
+								  
+							}
+						}
+					}
+					> li.mega-menu-item {
+
+						margin: 0 20px;
 						display: inline-block;
 						line-height: 60px;
 
@@ -105,6 +225,17 @@ header {
 							display: inline-block;
 							margin: 0;
 						}
+
+						.mega-menu-link{
+							line-height: 100px;
+							height: 100px;
+
+							@include down(xl){
+								line-height: unset;
+								height: auto;
+								background:transparent;
+							}
+						}
 	
 						a{
 	
@@ -113,67 +244,167 @@ header {
 							color: $pcw;
 							font-family: $primary-font;
 							letter-spacing: 0.84px;
-							-webkit-transition: .3s ease-in-out;
-							transition: all .3s ease-in-out;
+							// -webkit-transition: .3s ease-in-out;
+							// transition: all .3s ease-in-out;
 	
 							&:hover{
+								color: #992f2f;
 								text-decoration: underline;
-							}
-						}
-	
-					}
-	
-				}
-				
-				
-				.menu-primary-navigation-container{
 
-					.menu-item-has-children{
+								@include down(xl){
+									color: $pcw;
+									text-decoration: none;
+								}
 
-						ul.sub-menu {
-							background: $pcb;
-							position: absolute;
-							z-index: 1;
-							// -webkit-box-shadow: 0 3px 12px rgb(0 0 0 / 15%);
-							// box-shadow: 0 3px 12px rgb(0 0 0 / 15%);
-							opacity: 0;
-							visibility: hidden;
-							top: 70px;
-							list-style: none;
-							padding: 20px;
-							-webkit-transition: .3s ease-in-out;
-							transition: all .3s ease-in-out;
+								span.mega-indicator{
 
-							li{
-								line-height: 45px;
+									&::after{
 
-								a{
-									padding: 12px 10px;
+										transform: rotate(-180deg);
+
+
+										@include down(xl){
+											transform: none;
+										}
+
+									}
 								}
 							}
 
-						}
+							> span.mega-indicator{
 
-						>a{
-							background-image: url(/wp-content/uploads/2022/12/down-filled-triangular-arrow.png);
-							background-repeat: no-repeat;
-							background-position: right 5px;
-							padding-right: 20px;
-							background-size: 12px;
-						}
+								&::after{
 
-						&:hover{
+									background-image: url(/wp-content/uploads/2022/12/down-filled-triangular-arrow.png);
+									background-repeat: no-repeat;
+									background-position: center;
+									background-size: 12px;
+									color: $pcr;
+									transition: 0.5s ease-in-out;
 
-							.sub-menu{
-								opacity: 1;
-    							visibility: visible;
+								}
+
 							}
 						}
 
+						.mega-sub-menu{
+							padding: 20px;
+							background: $pcw;
+							// margin-top: 30px;
 
+							@include down(xl){
+								padding: 10px;
+								background-color: $pcb;
+							}
+
+
+							li{
+								padding: 5px;
+
+								&:hover{
+
+									a{
+									border-radius: 5px;
+									background: #8C929A21;
+									color: $pcr;
+								
+									}
+								}
+								a{
+									background: $pcw;
+									color: $pcb;
+									font-family: $primary-font;
+									font-weight: 500;
+									padding: 10px 20px;
+									line-height: 20px;
+									height: auto;
+									
+								}
+							}
+						}
+
+						// .mega-sub-menu{
+						// 	top: 70px;
+						// }
+	
 					}
 
+					@include down(xl){
+
+					.mega-toggle-on{
+
+						a{
+							&:hover{
+
+								span.mega-indicator{
+
+									&::after{
+
+											transform: rotate(-180deg)!important;
+											transition: all 0.3s ease-in-out;
+
+									}
+								}
+
+							}
+						}
+
+					}
+					}
+	
 				}
+				
+				
+				// .menu-primary-navigation-container{
+
+				// 	.menu-item-has-children{
+
+				// 		ul.sub-menu {
+				// 			background: $pcb;
+				// 			position: absolute;
+				// 			z-index: 1;
+				// 			// -webkit-box-shadow: 0 3px 12px rgb(0 0 0 / 15%);
+				// 			// box-shadow: 0 3px 12px rgb(0 0 0 / 15%);
+				// 			opacity: 0;
+				// 			visibility: hidden;
+				// 			top: 70px;
+				// 			list-style: none;
+				// 			padding: 20px;
+				// 			-webkit-transition: .3s ease-in-out;
+				// 			transition: all .3s ease-in-out;
+
+				// 			li{
+				// 				line-height: 45px;
+
+				// 				a{
+				// 					padding: 12px 10px;
+				// 				}
+				// 			}
+
+				// 		}
+
+				// 		>a{
+				// 			background-image: url(/wp-content/uploads/2022/12/down-filled-triangular-arrow.png);
+				// 			background-repeat: no-repeat;
+				// 			background-position: right 5px;
+				// 			padding-right: 20px;
+				// 			background-size: 12px;
+				// 		}
+
+				// 		&:hover{
+
+				// 			.sub-menu{
+				// 				opacity: 1;
+    			// 				visibility: visible;
+				// 			}
+				// 		}
+
+
+				// 	}
+
+				// }
+
+			}
 			}
 
 			.search{
@@ -185,6 +416,20 @@ header {
 					background-size: 30px;
 					background-position: center;
 					display: block;
+
+				}
+
+				@include down(xl){
+
+					display: none;
+				}
+			}
+
+			.cta{
+
+				@include down(xl){
+
+					display: none;
 				}
 			}
 
@@ -193,7 +438,11 @@ header {
     }
 
 	.bg-header{
-		background: #000000e0;
+		backdrop-filter: blur(15px) saturate(131%);
+		-webkit-backdrop-filter: blur(16px) saturate(180%);
+		background-color: rgb(0 0 0 / 58%);
+		border-radius: 12px;
+		border: 1px solid rgba(255, 255, 255, 0.125);
 	}
 
 }

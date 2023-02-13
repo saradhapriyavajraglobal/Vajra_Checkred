@@ -52,7 +52,7 @@ body{
                 height: 70%;
                 top: 50%;
                 transform: translateY(-50%);
-                background-color: $pcr;
+              
         
             }
             .btn-link{
@@ -208,6 +208,11 @@ body{
                     color: $pcw;
                 }
             }
+            .text-wrap:after{
+
+                background-color: $pcg;
+        
+            }
             
         }
         
@@ -234,6 +239,11 @@ body{
                     color: $pcr !important;
                     transition: all .7s ease-in-out;
                 }
+            }
+            .text-wrap:after{
+
+                background-color: $pcr;
+        
             }
         }
        
@@ -343,4 +353,13 @@ body{
     }
     .v-para-lh2{
         line-height: 24px;
+    }
+
+
+    .section-pad{
+        padding: 50px 0;
+
+        @include down(xl){
+            padding: 30px 0;
+        }
     }
